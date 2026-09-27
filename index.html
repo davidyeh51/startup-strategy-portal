@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>創業策略思考知識庫暨麥肯錫簡報教材門戶 | Startup Strategy & Briefing Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;800;900&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Executive Bar -->
+  <div class="portal-topbar">
+    <div><strong>DAVID CLOUD 2.0</strong> ｜ A1. 事業職涯 ▸ A1.4 創業 ▸ A1.4.1 策略思考知識庫</div>
+    <div>McKinsey &amp; Company Executive Briefing Visual Standard • 支援全站關鍵字即時檢索</div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="portal-hero">
+    <div class="portal-hero-inner">
+      <div>
+        <div class="eyebrow-tag">🧭 McKinsey Executive Briefing Knowledge Base</div>
+        <h1>創業策略思考知識庫<br><span class="gold-accent">經典商管與實戰書籍簡報教材門戶</span></h1>
+        <p class="hero-lead">
+          以<strong>麥肯錫金字塔原理（Action Title 結論先行）</strong>與<strong>結構化圖表／表格雙軌視覺</strong>，將數十本創業策略、超級個體、精益驗證、AI 組織與領導力經典著作，提煉為學員可於 10–15 分鐘內高效吸收、隨查隨用的互動式顧問簡報教材。
+        </p>
+
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="book-passion-to-business.html" class="btn-mck-primary" style="background: #D97706; color: #FFFFFF; padding: 13px 26px; font-size: 0.96rem;">
+            🎬 立即研讀 #001《把熱愛變成事業》16 頁簡報教材 →
+          </a>
+          <a href="downloads/passion-to-business-mckinsey-briefing.pptx" class="btn-mck-secondary" style="background: rgba(255,255,255,0.08); color: #FFFFFF; border-color: rgba(255,255,255,0.35);">
+            📥 下載麥肯錫離線簡報 (.pptx)
+          </a>
+        </div>
+
+        <!-- Executive KPI Strip -->
+        <div class="hero-kpi-strip">
+          <div class="hero-kpi-card">
+            <div class="hero-kpi-num">50+ 本</div>
+            <div class="hero-kpi-label">模組化教材書庫擴充容量</div>
+          </div>
+          <div class="hero-kpi-card">
+            <div class="hero-kpi-num">100%</div>
+            <div class="hero-kpi-label">每頁具備視覺圖表與表格</div>
+          </div>
+          <div class="hero-kpi-card">
+            <div class="hero-kpi-num">46+ 項</div>
+            <div class="hero-kpi-label">可量化驗證落地行動指標</div>
+          </div>
+          <div class="hero-kpi-card">
+            <div class="hero-kpi-num">毫秒級</div>
+            <div class="hero-kpi-label">跨書／跨頁關鍵字深層檢索</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Illustration -->
+      <div class="hero-visual-box">
+        <img src="images/hero-startup.jpg" alt="從線性打工階梯邁向指數級數位槓桿飛輪">
+        <div class="hero-visual-caption">
+          <span>Exhibit 0 ｜ 從「出賣時間搬磚」躍遷至「打造可規模化系統」</span>
+          <span>McKinsey Navy &amp; Gold Edition</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Global Search & Navigation Bar -->
+  <nav class="portal-sticky-bar">
+    <div class="portal-sticky-inner">
+      <div class="portal-nav-links">
+        <a href="#bookshelf-section" class="portal-nav-pill active">📚 簡報教材書庫</a>
+        <a href="#roadmap-section" class="portal-nav-pill">🗺️ 6P 戰略架構圖</a>
+        <a href="#router-section" class="portal-nav-pill">🧭 學員處境分流表</a>
+        <a href="#cross-matrix-section" class="portal-nav-pill">⚡ 跨書法則速查</a>
+        <a href="book-passion-to-business.html" class="portal-nav-pill cta-pill">🎬 開啟 #001 互動簡報</a>
+      </div>
+
+      <!-- Global Keyword Search Box -->
+      <div class="global-search-wrapper">
+        <span class="global-search-icon">🔍</span>
+        <input
+          type="text"
+          id="globalSearchInput"
+          class="global-search-input"
+          placeholder="搜尋全站書籍、章節、簡報頁關鍵字（如：6P、老媽測試、MVP、7-11-4、私域、定價...）"
+          autocomplete="off"
+        >
+        <span class="global-search-kbd">按 / 搜尋</span>
+      </div>
+    </div>
+
+    <!-- Quick Keyword Chips for Students -->
+    <div class="quick-keywords-bar">
+      <span style="font-size: 0.76rem; font-weight: 800; color: #051C2C;">🔥 熱門教材關鍵字：</span>
+      <button class="kw-chip" data-kw="6P">6P事業模型</button>
+      <button class="kw-chip" data-kw="工資">工資奴役陷阱</button>
+      <button class="kw-chip" data-kw="1000">1000鐵桿粉絲</button>
+      <button class="kw-chip" data-kw="孔乙己">孔乙己的長衫</button>
+      <button class="kw-chip" data-kw="群紅">先當群紅再當網紅</button>
+      <button class="kw-chip" data-kw="私域">公域轉私域資產</button>
+      <button class="kw-chip" data-kw="海報">MVP海報測試</button>
+      <button class="kw-chip" data-kw="老媽測試">老媽測試六法則</button>
+      <button class="kw-chip" data-kw="產品階梯">產品階梯與LTV</button>
+      <button class="kw-chip" data-kw="7-11-4">7-11-4信任法則</button>
+      <button class="kw-chip" data-kw="只漲不降">定價只漲不降</button>
+      <button class="kw-chip" data-kw="在路上找人">在路上找人(非雇傭)</button>
+      <button class="kw-chip" data-kw="槓桿">三大槓桿與複利</button>
+      <button class="kw-chip" data-kw="老鼠陷阱">逃離老鼠陷阱</button>
+      <button class="kw-chip" data-kw="高績效教練">跨書：高績效教練</button>
+      <button class="kw-chip" data-kw="逆分工">台哥大：AI逆分工</button>
+      <button class="kw-chip" data-kw="FDE">一人AI公司與FDE</button>
+    </div>
+
+    <!-- Live Search Results Dropdown Panel -->
+    <div id="searchResultsPanel" class="search-results-panel">
+      <div class="search-results-header">
+        <div id="searchResultCount" style="font-size: 0.95rem; color: #051C2C;">搜尋結果</div>
+        <button id="btnClearSearch" class="btn-mck-secondary" style="padding: 5px 12px; font-size: 0.78rem;">✕ 清除搜尋</button>
+      </div>
+      <div id="searchResultsList"></div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="portal-main">
+
+    <!-- ====================================================================
+         SECTION 1: 創業策略教材書庫 (支援 50+ 本擴充與六大領域篩選)
+         ==================================================================== -->
+    <section id="bookshelf-section">
+      <div class="mck-section-header">
+        <div>
+          <div class="mck-section-eyebrow">STRATEGIC BRIEFING LIBRARY • 模組化教材知識庫</div>
+          <h2 class="mck-section-title">創業策略思考・參考書籍簡報教材總覽</h2>
+          <p class="mck-section-desc">每本教材均依「麥肯錫顧問簡報規範」編製：金字塔結論標題 × 逐章視覺圖表 (Exhibit) × 結構化比較與落地行動表。</p>
+        </div>
+      </div>
+
+      <!-- 6 Domain Filter Tabs -->
+      <div class="domain-filter-bar">
+        <button class="domain-tab active" data-domain="all">全部教材與案例 <span class="domain-count">6</span></button>
+        <button class="domain-tab" data-domain="model">🧭 01 商業模式與超級個體 <span class="domain-count">2</span></button>
+        <button class="domain-tab" data-domain="validation">🚀 02 精益驗證與產品矩陣 <span class="domain-count">1</span></button>
+        <button class="domain-tab" data-domain="brand">📣 03 品牌定位與私域增長 <span class="domain-count">1</span></button>
+        <button class="domain-tab" data-domain="ai-org">⚙️ 04 AI 組織與逆分工架構 <span class="domain-count">2</span></button>
+        <button class="domain-tab" data-domain="corp">📈 05 企業破繭與新事業開發 <span class="domain-count">2</span></button>
+        <button class="domain-tab" data-domain="leadership">🧠 06 領導力與高績效教練 <span class="domain-count">2</span></button>
+      </div>
+
+      <!-- Bookshelf Cards Grid -->
+      <div class="bookshelf-grid">
+
+        <!-- FEATURED BOOK #001: 把熱愛變成事業 -->
+        <article class="book-deck-card featured" data-domain="model validation brand leadership">
+          <div class="book-card-body">
+            <div class="book-meta-row">
+              <span class="badge-mck badge-navy">BOOK #001 ｜ 首發完整教材</span>
+              <span class="badge-mck badge-gold">🔥 16 頁麥肯錫簡報</span>
+              <span class="badge-mck badge-blue">16 幅視覺圖表 + 16 張對照表</span>
+              <span class="badge-mck badge-emerald">46 項落地行動指標</span>
+            </div>
+
+            <h3 class="book-card-title">《把熱愛變成事業：等著每月領工資，是人生最大的陷阱》</h3>
+            <div class="book-card-author">作者：凱莉彭（前 Airbnb 資料科學家、百萬超級個體創業者）｜ 顧問視角深度解讀與 90 天行動方案</div>
+
+            <div class="book-card-thesis">
+              <strong>💡 一句話核心主張（The Lede）：</strong><br>
+              月薪具有成癮性，唯有讓「生活水準遠低於收入水準」建立半年至一年安全緩衝，並依循 <strong>6P 事業模型（熱愛 Passion → 圈子 Peer Group → 個人品牌 Personal Brand → 產品 Product → 銷售 Promotion → 合作夥伴 Partnerships）</strong>結合零邊際成本的<strong>數位槓桿</strong>，才能從出賣時間的打工人躍遷為擁有複利系統的超級個體。
+            </div>
+
+            <div style="font-size: 0.8rem; font-weight: 800; color: #051C2C; margin-bottom: 8px;">📑 點擊章節直達對應簡報頁（Slide 1 – Slide 16）：</div>
+            <div class="book-chapter-pills">
+              <a href="book-passion-to-business.html#slide-01" class="chapter-jump-pill">S1 封面與轉型三基準</a>
+              <a href="book-passion-to-business.html#slide-02" class="chapter-jump-pill">S2 全書6P架構網絡圖</a>
+              <a href="book-passion-to-business.html#slide-03" class="chapter-jump-pill">S3 Ch1(上) 三條脫離路徑</a>
+              <a href="book-passion-to-business.html#slide-04" class="chapter-jump-pill">S4 Ch1(下) 快車道與6P自評</a>
+              <a href="book-passion-to-business.html#slide-05" class="chapter-jump-pill">S5 Ch2 發現超能力與IKIGAI</a>
+              <a href="book-passion-to-business.html#slide-06" class="chapter-jump-pill">S6 Ch3 換圈子與先當群紅</a>
+              <a href="book-passion-to-business.html#slide-07" class="chapter-jump-pill">S7 Ch4 個人品牌與私域沉澱</a>
+              <a href="book-passion-to-business.html#slide-08" class="chapter-jump-pill">S8 Ch5(上) 商業迭代與知識付費</a>
+              <a href="book-passion-to-business.html#slide-09" class="chapter-jump-pill">S9 Ch5(下) 海報MVP與老媽測試</a>
+              <a href="book-passion-to-business.html#slide-10" class="chapter-jump-pill">S10 Ch6 產品階梯與收入四階段</a>
+              <a href="book-passion-to-business.html#slide-11" class="chapter-jump-pill">S11 Ch7(上) 敢收錢與定價只漲不降</a>
+              <a href="book-passion-to-business.html#slide-12" class="chapter-jump-pill">S12 Ch7(下) 排隊效應與7-11-4法則</a>
+              <a href="book-passion-to-business.html#slide-13" class="chapter-jump-pill">S13 Ch8 在路上找人與非雇傭</a>
+              <a href="book-passion-to-business.html#slide-14" class="chapter-jump-pill">S14 Ch9 數位槓桿與逃離老鼠陷阱</a>
+              <a href="book-passion-to-business.html#slide-15" class="chapter-jump-pill">S15 跨書整合：高績效教練×台哥大</a>
+              <a href="book-passion-to-business.html#slide-16" class="chapter-jump-pill">S16 90天執行藍圖與五維度自檢</a>
+            </div>
+
+            <div class="book-card-actions">
+              <a href="book-passion-to-business.html" class="btn-mck-primary">🎬 進入互動簡報教材 (16 頁完整版) →</a>
+              <a href="book-passion-to-business.html?q=行動方案#slide-16" class="btn-mck-secondary">⚡ 直達 90 天落地行動表</a>
+              <a href="downloads/passion-to-business-mckinsey-briefing.pptx" class="btn-mck-secondary">📥 下載 .pptx 簡報檔</a>
+            </div>
+          </div>
+
+          <!-- Right Preview Panel inside Featured Card -->
+          <div class="book-featured-preview">
+            <div>
+              <div style="font-size: 0.75rem; font-weight: 800; color: #F59E0B; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px;">
+                EXECUTIVE BRIEFING HIGHLIGHTS
+              </div>
+              <h4 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 14px; line-height: 1.35;">
+                為什麼這本書是「離職創業／副業轉正／超級個體」必讀第一課？
+              </h4>
+              <ul style="list-style: none; font-size: 0.86rem; color: #CBD5E1; display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px;">
+                <li>🔹 <strong>破除「副業超過主業才敢辭」迷思</strong>：給出達到主業 50% 或具備「可持續、可複製、可放大」即可轉型的量化判準。</li>
+                <li>🔹 <strong>破除「大流量才能變現」迷思</strong>：實證 1,000 鐵桿粉絲與「7-11-4 信任深度」（7小時×11次×4平台）勝過十萬泛粉。</li>
+                <li>🔹 <strong>破除「先錄完課再開賣」陷阱</strong>：以《老媽測試》過濾假讚美，用「一張海報收預購金」與「1對1諮詢」零成本驗證 MVP。</li>
+                <li>🔹 <strong>揭露方法論邊界（82% 把握度自檢）</strong>：誠實點出原書 100% 倖存者偏差與微信生態落差，補上<strong>台灣 LINE/IG/Threads 對照表</strong>與<strong>強制停損護欄</strong>。</li>
+              </ul>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; padding: 14px;">
+              <div style="font-size: 0.76rem; color: #FDE68A; font-weight: 700; margin-bottom: 6px;">📊 教材內建雙視覺規格（每頁皆含）：</div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.78rem; color: #E2E8F0;">
+                <div>✓ 麥肯錫 SVG 戰略模型圖</div>
+                <div>✓ 結構化數據與行動檢核表</div>
+                <div>✓ 顧問延伸推論明確標註</div>
+                <div>✓ 逐頁三段式講稿備忘錄</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASE #S01: 台灣大哥大林之晨破繭重生兩步驟 -->
+        <article class="book-deck-card" data-domain="corp ai-org">
+          <div class="book-card-body">
+            <div class="book-meta-row">
+              <span class="badge-mck badge-navy">CASE #S01 ｜ 實戰案例研析</span>
+              <span class="badge-mck badge-blue">05 企業破繭與新事業</span>
+            </div>
+            <h3 class="book-card-title" style="font-size: 1.22rem;">《台灣大哥大破繭重生兩步驟：指標精簡 × 既有資產孵化 × AI 逆分工》</h3>
+            <div class="book-card-author">主講：林之晨（台灣大哥大總經理）｜ 大衛雲 A1.4.1 核心條目 #001</div>
+            <div class="book-card-thesis">
+              <strong>核心洞察：</strong>把管理指標砍到只剩 <strong>ARPU 與流失率</strong>兩項（推出 48 個月合約將月流失率從 2% 降至 0.45%）；新事業從「既有但未充分利用的資產」（帳單代收年交易 200 億）長出來，並以「AI 逆分工」重組職能。
+            </div>
+            <div class="book-chapter-pills">
+              <span class="chapter-jump-pill">#KPI精簡</span>
+              <span class="chapter-jump-pill">#既有資產長新事業</span>
+              <span class="chapter-jump-pill">#AI逆分工</span>
+            </div>
+            <div class="book-card-actions">
+              <a href="book-passion-to-business.html?q=逆分工#slide-15" class="btn-mck-primary" style="font-size: 0.82rem; padding: 9px 16px;">查看跨書對照簡報 (Slide 15) →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASE #S02: 一人 AI 公司與 FDE 顧問模型 -->
+        <article class="book-deck-card" data-domain="ai-org model">
+          <div class="book-card-body">
+            <div class="book-meta-row">
+              <span class="badge-mck badge-navy">CASE #S02 ｜ 市場情報與架構</span>
+              <span class="badge-mck badge-emerald">04 AI 組織與 FDE 顧問</span>
+            </div>
+            <h3 class="book-card-title" style="font-size: 1.22rem;">《一人 AI 公司與 FDE 前線部署顧問模型：Polsia × EgentHub × CloudMile》</h3>
+            <div class="book-card-author">來源：A1.4.1.2 一人AI公司知識庫 × A1.4.5 FDE顧問公司計畫 R1.0</div>
+            <div class="book-card-thesis">
+              <strong>核心洞察：</strong>Polsia 靠「80/20 哲學」（AI 做 80% 執行、人做 20% 品味與定價判斷）零員工衝千萬美元年收；EgentHub 以「1 人指揮 10 隻 Agent = 50 分工點」服務 200 家製造業；同時揭示<strong>算力成本失控</strong>與<strong>行為留痕治理</strong>兩大護欄。
+            </div>
+            <div class="book-chapter-pills">
+              <span class="chapter-jump-pill">#80/20營運哲學</span>
+              <span class="chapter-jump-pill">#1人指揮10Agent</span>
+              <span class="chapter-jump-pill">#FDE前線部署</span>
+              <span class="chapter-jump-pill">#算力毛利警戒線</span>
+            </div>
+            <div class="book-card-actions">
+              <a href="book-passion-to-business.html?q=槓桿#slide-14" class="btn-mck-primary" style="font-size: 0.82rem; padding: 9px 16px;">查看數位槓桿簡報 (Slide 14) →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- BOOK #002: 高績效教練 (已跨書整合) -->
+        <article class="book-deck-card" data-domain="leadership">
+          <div class="book-card-body">
+            <div class="book-meta-row">
+              <span class="badge-mck badge-gold">BOOK #002 ｜ 跨書對照已上線</span>
+              <span class="badge-mck badge-slate">06 領導力與高績效教練</span>
+            </div>
+            <h3 class="book-card-title" style="font-size: 1.22rem;">《高績效教練（原書第 5 版）：Coaching for Performance》</h3>
+            <div class="book-card-author">作者：約翰·惠特默（Sir John Whitmore）｜ A1.2.2 經理人教練核心藏書</div>
+            <div class="book-card-thesis">
+              <strong>核心洞察：</strong>「績效＝潛能－干擾」。與《把熱愛變成事業》共同主張「環境槓桿大於意志力」與「行動先於答案」；並釐清<strong>帶人要慢（建立責任感）vs. 測市場要快（先開槍再瞄準）</strong>的場景張力。
+            </div>
+            <div class="book-chapter-pills">
+              <span class="chapter-jump-pill">#績效等於潛能減干擾</span>
+              <span class="chapter-jump-pill">#GROW模型</span>
+              <span class="chapter-jump-pill">#快慢場景張力</span>
+            </div>
+            <div class="book-card-actions">
+              <a href="book-passion-to-business.html?q=高績效教練#slide-15" class="btn-mck-primary" style="font-size: 0.82rem; padding: 9px 16px;">查看跨書整合分析 (Slide 15) →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- BOOK #003: 納瓦爾寶典 (待展開獨立簡報) -->
+        <article class="book-deck-card" data-domain="model">
+          <div class="book-card-body">
+            <div class="book-meta-row">
+              <span class="badge-mck badge-slate">BOOK #003 ｜ 佇列中 (A1.1.1 藏書)</span>
+              <span class="badge-mck badge-blue">01 商業模式與超級個體</span>
+            </div>
+            <h3 class="book-card-title" style="font-size: 1.22rem;">《納瓦爾寶典：從白手起家到財務自由的致富與幸福指南》</h3>
+            <div class="book-card-author">作者：埃里克·喬根森 ／ 納瓦爾·拉維坎特（Naval Ravikant）</div>
+            <div class="book-card-thesis">
+              <strong>核心洞察：</strong>把自己產品化（Productize Yourself）＝「獨特專長 × 個人品牌責任 × 無須許可的數位槓桿（程式碼與自媒體）」。本書三大槓桿框架已率先整合於《把熱愛變成事業》第 9 章簡報（Slide 14）。
+            </div>
+            <div class="book-chapter-pills">
+              <span class="chapter-jump-pill">#把自己產品化</span>
+              <span class="chapter-jump-pill">#三大槓桿</span>
+              <span class="chapter-jump-pill">#複利效應</span>
+            </div>
+            <div class="book-card-actions">
+              <a href="book-passion-to-business.html?q=納瓦爾#slide-14" class="btn-mck-secondary" style="font-size: 0.82rem; padding: 8px 14px;">先看三大槓桿圖解 (Slide 14) →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- BOOK #004 ~ #050 擴充插槽說明卡 -->
+        <article class="book-deck-card" data-domain="corp model validation brand ai-org leadership" style="border-top-color: #64748B; background: #F8FAFC; border-style: dashed;">
+          <div class="book-card-body">
+            <div class="book-meta-row">
+              <span class="badge-mck badge-slate">BOOK #004 ~ #050 ｜ 擴充架構就緒</span>
+              <span class="badge-mck badge-gold">Scalable Architecture</span>
+            </div>
+            <h3 class="book-card-title" style="font-size: 1.22rem;">➕ 未來數十本創業策略書籍・標準化入庫管線</h3>
+            <div class="book-card-author">候選佇列：《張忠謀談策略與領導》、《精益創業》、《老媽測試》、《Oversubscribed》、《隱藏的潛能》等</div>
+            <div class="book-card-thesis" style="background: #FFFFFF; border-left-color: #D97706;">
+              <strong>三步驟極速擴充機制：</strong><br>
+              ① 提供書籍 PDF 與逐章分析 `.md` 檔；<br>
+              ② 自動生成 12–16 頁麥肯錫雙視覺 HTML 簡報（`book-xxx.html`）與 `.pptx`；<br>
+              ③ 寫入 `search-index.js` 索引庫，全站關鍵字搜尋與領域篩選即時生效！
+            </div>
+            <div class="book-card-actions">
+              <span style="font-size: 0.8rem; color: #64748B; font-weight: 600;">✓ 支援 50+ 本書籍、800+ 頁簡報毫秒級全文檢索</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 2: 6P 創業全鏈路戰略視覺地圖 (Interactive SVG Exhibit)
+         ==================================================================== -->
+    <section id="roadmap-section" style="margin-top: 64px;">
+      <div class="mck-section-header">
+        <div>
+          <div class="mck-section-eyebrow">STRATEGIC ARCHITECTURE • 6P 事業模型與九章依賴網絡</div>
+          <h2 class="mck-section-title">從「打工領薪」到「超級個體系統」全鏈路戰略地圖</h2>
+          <p class="mck-section-desc">點擊圖中任一章節模組，可直接跳轉至《把熱愛變成事業》對應之麥肯錫簡報頁（Slide 1 – Slide 16）。</p>
+        </div>
+      </div>
+
+      <div class="mck-exhibit-box" style="background: #FFFFFF; padding: 24px; box-shadow: var(--shadow-sm);">
+        <div class="exhibit-header">
+          <span class="exhibit-label">EXHIBIT A ｜ FULL-BOOK STRATEGIC DEPENDENCY NETWORK</span>
+          <span class="exhibit-title">地基層（Ch1–3）→ 驗證層（Ch4, 5, 7 最短現金流閉環）→ 放大層（Ch6, 8, 9 系統槓桿）</span>
+        </div>
+
+        <div class="exhibit-canvas">
+          <svg viewBox="0 0 1100 420" width="100%" style="max-height: 420px; font-family: 'Inter', 'Noto Sans TC', sans-serif;">
+            <defs>
+              <marker id="arrowNavy" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 1 L 10 5 L 0 9 z" fill="#051C2C" />
+              </marker>
+              <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 1 L 10 5 L 0 9 z" fill="#D97706" />
+              </marker>
+            </defs>
+
+            <!-- Background Layer Columns -->
+            <rect x="15" y="15" width="335" height="390" rx="8" fill="#F0F7FF" stroke="#BAE6FD" stroke-width="1.5" />
+            <text x="182" y="42" text-anchor="middle" fill="#0369A1" font-size="13" font-weight="800">🟦 第一階段：地基層（有收入前：風險與方向）</text>
+
+            <rect x="375" y="15" width="345" height="390" rx="8" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.5" />
+            <text x="547" y="42" text-anchor="middle" fill="#047857" font-size="13" font-weight="800">🟩 第二階段：驗證層（最短現金流閉環：缺一不可）</text>
+
+            <rect x="745" y="15" width="340" height="390" rx="8" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1.5" />
+            <text x="915" y="42" text-anchor="middle" fill="#B45309" font-size="13" font-weight="800">🟨 第三階段：放大層（驗證跑通後：規模與系統）</text>
+
+            <!-- Node Ch1 -->
+            <a href="book-passion-to-business.html#slide-03">
+              <rect x="40" y="65" width="285" height="86" rx="6" fill="#051C2C" stroke="#0066CC" stroke-width="2" />
+              <text x="56" y="90" fill="#38BDF8" font-size="11" font-weight="800">CH 1 ｜ 風險護欄 (Slide 3–4)</text>
+              <text x="56" y="112" fill="#FFFFFF" font-size="14" font-weight="800">逃離工資陷阱 ＆ 6P 事業總綱</text>
+              <text x="56" y="134" fill="#CBD5E1" font-size="11">生活水準＜收入水準・存6-12月儲備・副業達50%轉正</text>
+            </a>
+
+            <!-- Node Ch2 -->
+            <a href="book-passion-to-business.html#slide-05">
+              <rect x="40" y="178" width="285" height="86" rx="6" fill="#FFFFFF" stroke="#0284C7" stroke-width="2" />
+              <text x="56" y="203" fill="#0284C7" font-size="11" font-weight="800">CH 2 ｜ P1 熱愛 Passion (Slide 5)</text>
+              <text x="56" y="225" fill="#051C2C" font-size="14" font-weight="800">發現超能力・脫掉孔乙己長衫</text>
+              <text x="56" y="247" fill="#475569" font-size="11">IKIGAI四象限・1000鐵桿粉絲・熱愛且解決問題</text>
+            </a>
+
+            <!-- Node Ch3 -->
+            <a href="book-passion-to-business.html#slide-06">
+              <rect x="40" y="290" width="285" height="86" rx="6" fill="#FFFFFF" stroke="#0284C7" stroke-width="2" />
+              <text x="56" y="315" fill="#0284C7" font-size="11" font-weight="800">CH 3 ｜ P2 圈子 Peer Group (Slide 6)</text>
+              <text x="56" y="337" fill="#051C2C" font-size="14" font-weight="800">切換五人平均值・先當群紅再網紅</text>
+              <text x="56" y="359" fill="#475569" font-size="11">借外部推力破局・利他給予・拿到第一批種子回饋</text>
+            </a>
+
+            <!-- Node Ch4 -->
+            <a href="book-passion-to-business.html#slide-07">
+              <rect x="400" y="65" width="295" height="86" rx="6" fill="#FFFFFF" stroke="#059669" stroke-width="2" />
+              <text x="416" y="90" fill="#059669" font-size="11" font-weight="800">CH 4 ｜ P3 個人品牌 Brand (Slide 7)</text>
+              <text x="416" y="112" fill="#051C2C" font-size="14" font-weight="800">專業是流量的敵人・公域轉私域</text>
+              <text x="416" y="134" fill="#475569" font-size="11">6歲聽懂的話・教學/啟發/娛樂・私域5步分層貼標</text>
+            </a>
+
+            <!-- Node Ch5 -->
+            <a href="book-passion-to-business.html#slide-08">
+              <rect x="400" y="178" width="295" height="86" rx="6" fill="#065F46" stroke="#10B981" stroke-width="2" />
+              <text x="416" y="203" fill="#6EE7B7" font-size="11" font-weight="800">CH 5 ｜ P4 打造產品 Product (Slide 8–9)</text>
+              <text x="416" y="225" fill="#FFFFFF" font-size="14" font-weight="800">海報預售 MVP・老媽測試・1對1諮詢</text>
+              <text x="416" y="247" fill="#D1FAE5" font-size="11">領先3-4級即可教・過濾假讚美・真金白銀驗證需求</text>
+            </a>
+
+            <!-- Node Ch7 -->
+            <a href="book-passion-to-business.html#slide-11">
+              <rect x="400" y="290" width="295" height="86" rx="6" fill="#FFFFFF" stroke="#059669" stroke-width="2" />
+              <text x="416" y="315" fill="#059669" font-size="11" font-weight="800">CH 7 ｜ P5 銷售推廣 Promotion (Slide 11–12)</text>
+              <text x="416" y="337" fill="#051C2C" font-size="14" font-weight="800">定價只漲不降・7-11-4 排隊效應</text>
+              <text x="416" y="359" fill="#475569" font-size="11">供小於求・7小時×11次×4平台・開賣前分階段預熱</text>
+            </a>
+
+            <!-- Node Ch6 -->
+            <a href="book-passion-to-business.html#slide-10">
+              <rect x="770" y="65" width="290" height="86" rx="6" fill="#FFFFFF" stroke="#D97706" stroke-width="2" />
+              <text x="786" y="90" fill="#D97706" font-size="11" font-weight="800">CH 6 ｜ 規模化體系 Scale (Slide 10)</text>
+              <text x="786" y="112" fill="#051C2C" font-size="14" font-weight="800">產品階梯 (LTV+50%)・年收四階段</text>
+              <text x="786" y="134" fill="#475569" font-size="11">引流→標準課→高階私教・避開199元超低價陷阱</text>
+            </a>
+
+            <!-- Node Ch8 -->
+            <a href="book-passion-to-business.html#slide-13">
+              <rect x="770" y="178" width="290" height="86" rx="6" fill="#FFFFFF" stroke="#D97706" stroke-width="2" />
+              <text x="786" y="203" fill="#D97706" font-size="11" font-weight="800">CH 8 ｜ P6 合作夥伴 Partner (Slide 13)</text>
+              <text x="786" y="225" fill="#051C2C" font-size="14" font-weight="800">在路上找人・非雇傭兼職網絡</text>
+              <text x="786" y="247" fill="#475569" font-size="11">先找教練不找合夥人・交付最先外包、內容最後分</text>
+            </a>
+
+            <!-- Node Ch9 -->
+            <a href="book-passion-to-business.html#slide-14">
+              <rect x="770" y="290" width="290" height="86" rx="6" fill="#051C2C" stroke="#F59E0B" stroke-width="2.5" />
+              <text x="786" y="315" fill="#FBBF24" font-size="11" font-weight="800">CH 9 ｜ 時間與槓桿護欄 (Slide 14–16)</text>
+              <text x="786" y="337" fill="#FFFFFF" font-size="14" font-weight="800">三大槓桿・逃離老鼠陷阱・複利</text>
+              <text x="786" y="359" fill="#FDE68A" font-size="11">零邊際成本數位槓桿・熬過前兩年平緩期・先開槍</text>
+            </a>
+
+            <!-- Connectors -->
+            <line x1="182" y1="151" x2="182" y2="174" stroke="#051C2C" stroke-width="2" marker-end="url(#arrowNavy)" />
+            <line x1="182" y1="264" x2="182" y2="286" stroke="#051C2C" stroke-width="2" marker-end="url(#arrowNavy)" />
+            <line x1="325" y1="215" x2="396" y2="115" stroke="#051C2C" stroke-width="2" marker-end="url(#arrowNavy)" />
+            <line x1="325" y1="330" x2="396" y2="230" stroke="#051C2C" stroke-width="2" marker-end="url(#arrowNavy)" />
+            <line x1="547" y1="151" x2="547" y2="174" stroke="#051C2C" stroke-width="2" marker-end="url(#arrowNavy)" />
+            <line x1="547" y1="264" x2="547" y2="286" stroke="#051C2C" stroke-width="2" marker-end="url(#arrowNavy)" />
+            <line x1="695" y1="215" x2="766" y2="115" stroke="#D97706" stroke-width="2.2" marker-end="url(#arrowGold)" />
+            <line x1="695" y1="330" x2="766" y2="230" stroke="#D97706" stroke-width="2.2" marker-end="url(#arrowGold)" />
+            <line x1="915" y1="151" x2="915" y2="174" stroke="#D97706" stroke-width="2" marker-end="url(#arrowGold)" />
+            <line x1="915" y1="264" x2="915" y2="286" stroke="#D97706" stroke-width="2" marker-end="url(#arrowGold)" />
+          </svg>
+        </div>
+
+        <div class="exhibit-source">
+          資料來源：《把熱愛變成事業》逐章分析與行動方案（大衛雲 A1.4.1 策略思考知識庫）。註：多數人失敗不在中間五步，而在頭（Ch1 現金儲備不足）尾（Ch9 時間被緊急瑣事吃光）兩端失守。
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 3: 學員處境快速分流矩陣 & 跨書核心法則速查表
+         ==================================================================== -->
+    <section id="router-section" style="margin-top: 64px;">
+      <div class="mck-section-header">
+        <div>
+          <div class="mck-section-eyebrow">DIAGNOSTIC ROUTER • 學員處境精準導航</div>
+          <h2 class="mck-section-title">你現在處於哪個創業階段？一表鎖定必讀簡報頁與本週首務</h2>
+          <p class="mck-section-desc">不同階段的優先級截然不同——已有專業技能者不應從「慢慢養粉絲」開始，而應直接切入最小商業驗證。</p>
+        </div>
+      </div>
+
+      <div class="mck-table-wrap" style="background: #FFFFFF; padding: 20px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-xs);">
+        <table class="mck-table">
+          <thead>
+            <tr>
+              <th style="width: 18%;">學員當前處境</th>
+              <th style="width: 24%;">最常踩入的致命盲點</th>
+              <th style="width: 26%;">麥肯錫顧問處方（核心突破點）</th>
+              <th style="width: 18%;">本週唯一必做指標 (KPI)</th>
+              <th style="width: 14%;">直達簡報教材</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. 在職觀望期</strong><br><span style="font-size:0.75rem; color:#64748B;">想離職或發展副業，但不敢踏出第一步</span></td>
+              <td>等「準備完美」才開始；或誤以為副業收入必須「超過主業」才敢辭職，導致無限期拖延。</td>
+              <td>先算財務緩衝線（支出/收入＜70%，存 6–12 個月生活費）；脫掉「孔乙己長衫」，加入已走過這條路的賦能圈子借外力推自己一把。</td>
+              <td>完成過去 3 個月支出審計（砍 1 項固定支出降 5%），完成 IKIGAI 與 6P 自評表。</td>
+              <td><a href="book-passion-to-business.html#slide-03" class="search-result-go" style="display:inline-block;">Slide 3, 5, 6 →</a></td>
+            </tr>
+            <tr>
+              <td><strong>2. 專業人士起步期</strong><br><span style="font-size:0.75rem; color:#64748B;">有技術/顧問/管理經驗，但 0 粉絲</span></td>
+              <td>誤以為要先花半年經營自媒體漲粉，或閉門造車錄製 30 節完整課程（結果賣不到 10 份）。</td>
+              <td><strong>跳過養粉，直攻第 5 章！</strong>只需比學員領先 3–4 級，用《老媽測試》訪談痛點，直接推「1對1付費諮詢」或「一張海報預售 MVP」。</td>
+              <td>設計 1 張服務海報在既有朋友圈/社群測試，或接下前 3 位一對一付費諮詢客戶。</td>
+              <td><a href="book-passion-to-business.html#slide-08" class="search-result-go" style="display:inline-block;">Slide 8, 9, 11 →</a></td>
+            </tr>
+            <tr>
+              <td><strong>3. 自媒體卡關期</strong><br><span style="font-size:0.75rem; color:#64748B;">有內容與流量，但變現微薄「用愛發電」</span></td>
+              <td>把「專業術語乾貨」當好內容（沒流量），或沉迷公域漲粉虛榮指標，且不敢開口向熟人/粉絲收錢。</td>
+              <td>用 6 歲小孩聽懂的話講故事與觀點（轉化率高 10 倍）；將公域粉絲導流至私域分層貼標；建立「7-11-4 信任深度」與分階段預熱。</td>
+              <td>簡介加上私域誘因，完成 30 位私域好友貼標，發布 100 字內明確收費服務自我介紹。</td>
+              <td><a href="book-passion-to-business.html#slide-07" class="search-result-go" style="display:inline-block;">Slide 7, 11, 12 →</a></td>
+            </tr>
+            <tr>
+              <td><strong>4. 一人忙碌瓶頸期</strong><br><span style="font-size:0.75rem; color:#64748B;">1對1接案滿載，月入數萬但時間枯竭</span></td>
+              <td>掉入「老鼠陷阱」（全天被緊急的 1對1 交付塞滿），或急著招全職員工／找合夥人分股權反遭反噬。</td>
+              <td>將 1對1 共通痛點升級為「標準化訓練營＋高階陪跑」產品階梯；最先將「交付運營」以<strong>非雇傭兼職／AI Agent</strong>分出，每週鎖定重要不緊急時間。</td>
+              <td>執行 7 天時間審計，行事曆每週鎖死 3 小時研發標準化產品，外包 1 項交付庶務。</td>
+              <td><a href="book-passion-to-business.html#slide-10" class="search-result-go" style="display:inline-block;">Slide 10, 13, 14 →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 4: 跨書策略法則對照總表 (Book #001 × 高績效教練 × 台哥大 × 一人AI公司)
+         ==================================================================== -->
+    <section id="cross-matrix-section" style="margin-top: 64px;">
+      <div class="mck-section-header">
+        <div>
+          <div class="mck-section-eyebrow">CROSS-BOOK SYNTHESIS • 跨書心智模型整合</div>
+          <h2 class="mck-section-title">大衛雲 2.0 創業策略思考・四大經典框架取捨對照表</h2>
+          <p class="mck-section-desc">將《把熱愛變成事業》與知識庫既有之《高績效教練》、林之晨「破繭重生」、Polsia/EgentHub「一人AI公司」進行交叉校準。</p>
+        </div>
+      </div>
+
+      <div class="mck-table-wrap" style="background: #FFFFFF; padding: 20px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-xs);">
+        <table class="mck-table">
+          <thead>
+            <tr>
+              <th>決策維度</th>
+              <th>《把熱愛變成事業》凱莉彭</th>
+              <th>《高績效教練》John Whitmore</th>
+              <th>《台哥大破繭重生》林之晨</th>
+              <th>《一人AI公司 &amp; FDE》Polsia / EgentHub</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>核心公式</strong></td>
+              <td><strong>6P 模型 × 數位槓桿</strong><br>（熱愛×圈子×品牌×產品×銷售×夥伴）</td>
+              <td><strong>績效 ＝ 潛能 － 干擾</strong><br>（以 GROW 提問消除內在干擾）</td>
+              <td><strong>破繭兩步驟 ＋ AI 逆分工</strong><br>（砍指標聚焦 ＋ 既有資產長新事業）</td>
+              <td><strong>80/20 哲學 ＋ 1人指揮10 Agent</strong><br>（AI 做 80% 執行，人留 20% 判斷）</td>
+            </tr>
+            <tr>
+              <td><strong>對「速度」的態度</strong></td>
+              <td>⚡ <strong>極致求快</strong>：先開槍再瞄準，7 天內做第一個動作，海報先賣再做。</td>
+              <td>🐢 <strong>刻意放慢</strong>：教練式領導反對直接給答案，慢下來才能建立對方責任感。</td>
+              <td>⏳ <strong>長期耐受</strong>：企業轉型動輒 7.5 年，多數失敗者死在第 5–6 年放棄。</td>
+              <td>🚀 <strong>高頻迭代</strong>：No-Code 15 分鐘建 Agent，每日早 8 點 AI 自動進度簡報。</td>
+            </tr>
+            <tr>
+              <td><strong>對「專業」的定位</strong></td>
+              <td>「專業是流量的敵人」——必須領先學員 3–4 級，但要用 6 歲聽得懂的話講。</td>
+              <td>教練不必是領域專家，過度依賴專業反而誘使人過早下指導棋。</td>
+              <td>垂直場域數據優勢（基站/門市/客服）＋ 脈絡數位化才是 AI 不腦補的關鍵。</td>
+              <td>頂尖 FDE 稀缺門檻不在純寫扣，而在「產業場域知識＋隱性經驗結構化」。</td>
+            </tr>
+            <tr>
+              <td><strong>組織與人力槓桿</strong></td>
+              <td><strong>在路上找人、非雇傭兼職網</strong>：3 年 0 全職員工，按工作量結算。</td>
+              <td>組織內團隊從「依賴」走向「相互依賴」的高績效文化。</td>
+              <td><strong>逆分工</strong>：AI 一次拿走一項任務，人補上新任務，職能打散重組。</td>
+              <td>精實不擴編（&lt;10人做出50人戰力），法務/基建/行銷外包，嚴控算力成本。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="portal-footer">
+    <p style="color: #FFFFFF; font-weight: 800; font-size: 1rem; margin-bottom: 6px;">
+      🧭 創業策略思考知識庫暨麥肯錫簡報教材門戶 ｜ Startup Strategy &amp; Executive Briefing Portal
+    </p>
+    <p>大衛雲 2.0（A1. 事業職涯 ▸ A1.4 創業 ▸ A1.4.1 策略思考）｜ 支援 50+ 本商管創業經典模組化擴充與全站關鍵字深層檢索</p>
+    <p style="font-size: 0.78rem; color: #64748B; margin-top: 10px;">
+      © 2026 David Yeh • McKinsey Navy &amp; Gold Visual Standard • Hosted on GitHub Pages
+    </p>
+  </footer>
+
+  <script src="search-index.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

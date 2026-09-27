@@ -1,0 +1,2488 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>《把熱愛變成事業》凱莉彭｜麥肯錫顧問 16 頁精華簡報與 90 天行動教材</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;800;900&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="mode-slide">
+
+  <!-- Top Presentation Header -->
+  <header class="deck-header">
+    <div class="deck-brand">
+      <button class="btn-deck-ctrl" id="btnToggleSidebar" title="切換側邊目錄欄">☰ 目錄</button>
+      <div class="deck-logo-mark">McK</div>
+      <div class="deck-brand-text">
+        <h1>BOOK #001 ｜《把熱愛變成事業：等著每月領工資，是人生最大的陷阱》</h1>
+        <p>作者：凱莉彭（前 Airbnb 資料科學家）｜ 資深創業顧問逐章解析・16 頁雙視覺簡報教材</p>
+      </div>
+    </div>
+
+    <div class="deck-controls">
+      <a href="index.html" class="btn-deck-ctrl">🏠 返回策略知識庫門戶</a>
+      <button class="btn-deck-ctrl active" id="btnModeSlide">🎬 簡報模式 (16:9)</button>
+      <button class="btn-deck-ctrl" id="btnModeScroll">📜 講義全覽模式</button>
+      <button class="btn-deck-ctrl gold-ctrl" id="btnToggleNotesAll" title="快捷鍵 N">🎙️ 顧問講稿備忘</button>
+      <a href="downloads/passion-to-business-mckinsey-briefing.pptx" class="btn-deck-ctrl">📥 下載 .pptx</a>
+      <button class="btn-deck-ctrl" id="btnFullscreen" title="全螢幕簡報">⛶</button>
+    </div>
+  </header>
+
+  <!-- Slide Progress Bar -->
+  <div class="deck-progress-wrap">
+    <div class="deck-progress-bar" id="deckProgressBar"></div>
+  </div>
+
+  <!-- Main Deck Layout -->
+  <div class="deck-layout">
+
+    <!-- Left Sidebar: Search, Layer Filter & 16-Slide Sitemap -->
+    <aside class="deck-sidebar" id="deckSidebar">
+      <div class="sidebar-search-box">
+        <input type="text" id="deckSearchInput" placeholder="搜尋本簡報關鍵字 (按 / 聚焦)..." autocomplete="off">
+      </div>
+      <div id="deckSearchStatus" style="display:none; font-size:0.75rem; color:#CBD5E1; background:rgba(0,102,204,0.25); padding:6px 10px; border-radius:4px;"></div>
+
+      <div class="sidebar-filter-pills">
+        <button class="layer-btn active" data-layer="all">全部 (16)</button>
+        <button class="layer-btn" data-layer="overview">總覽 (2)</button>
+        <button class="layer-btn" data-layer="foundation">🟦 地基 (4)</button>
+        <button class="layer-btn" data-layer="validation">🟩 驗證 (5)</button>
+        <button class="layer-btn" data-layer="scale">🟨 放大 (3)</button>
+        <button class="layer-btn" data-layer="synthesis">🟪 整合 (2)</button>
+      </div>
+
+      <nav class="slide-nav-list">
+        <div class="slide-nav-group">總綱與全書骨架</div>
+        <a class="slide-nav-item active" data-target="slide-01" data-layer="overview">
+          <span>封面：逃離工資陷阱與轉型三基準</span>
+          <span class="slide-num-pill">S01</span>
+        </a>
+        <a class="slide-nav-item" data-target="slide-02" data-layer="overview">
+          <span>全書架構：6P飛輪與九章依賴網絡</span>
+          <span class="slide-num-pill">S02</span>
+        </a>
+
+        <div class="slide-nav-group">🟦 地基層：風險、熱愛與圈子 (Ch 1–3)</div>
+        <a class="slide-nav-item" data-target="slide-03" data-layer="foundation">
+          <span>Ch1(上) 工資奴役與三條脫離路徑</span>
+          <span class="slide-num-pill">S03</span>
+        </a>
+        <a class="slide-nav-item" data-target="slide-04" data-layer="foundation">
+          <span>Ch1(下) 快車道五思維與 6P 模型</span>
+          <span class="slide-num-pill">S04</span>
+        </a>
+        <a class="slide-nav-item" data-target="slide-05" data-layer="foundation">
+          <span>Ch2 發現超能力・脫掉孔乙己長衫</span>
+          <span class="slide-num-pill">S05</span>
+        </a>
+        <a class="slide-nav-item" data-target="slide-06" data-layer="foundation">
+          <span>Ch3 換圈子換認知・先當群紅再網紅</span>
+          <span class="slide-num-pill">S06</span>
+        </a>
+
+        <div class="slide-nav-group">🟩 驗證層：品牌、MVP與銷售 (Ch 4, 5, 7)</div>
+        <a class="slide-nav-item" data-target="slide-07" data-layer="validation">
+          <span>Ch4 個人品牌・公域轉私域資產</span>
+          <span class="slide-num-pill">S07</span>
+        </a>
+        <a class="slide-nav-item" data-target="slide-08" data-layer="validation">
+          <span>Ch5(上) 商業六階演進與知識付費</span>
+          <span class="slide-num-pill">S08</span>
+        </a>
+        <a class="slide-nav-item" data-target="slide-09" data-layer="validation">
+          <span>Ch5(下) 海報預售MVP與老媽測試</span>
+          <span class="slide-num-pill">S09</span>
+        </a>
+        <a class="slide-nav-item" data-target="slide-10" data-layer="scale">
+          <span>Ch6 產品階梯(LTV+50%)與年收四階</span>
+          <span class="slide-num-pill">S10</span>
+        </a>
+        <a class="slide-nav-item" data-target="slide-11" data-layer="validation">
+          <span>Ch7(上) 突破收費卡點・定價只漲不降</span>
+          <span class="slide-num-pill">S11</span>
+        </a>
+        <a class="slide-nav-item" data-target="slide-12" data-layer="validation">
+          <span>Ch7(下) 排隊效應與 7-11-4 信任法則</span>
+          <span class="slide-num-pill">S12</span>
+        </a>
+
+        <div class="slide-nav-group">🟨 放大層：團隊與數位槓桿 (Ch 8–9)</div>
+        <a class="slide-nav-item" data-target="slide-13" data-layer="scale">
+          <span>Ch8 在路上找人・非雇傭兼職網絡</span>
+          <span class="slide-num-pill">S13</span>
+        </a>
+        <a class="slide-nav-item" data-target="slide-14" data-layer="scale">
+          <span>Ch9 三大槓桿、複利與逃離老鼠陷阱</span>
+          <span class="slide-num-pill">S14</span>
+        </a>
+
+        <div class="slide-nav-group">🟪 顧問整合與 90 天執行藍圖</div>
+        <a class="slide-nav-item" data-target="slide-15" data-layer="synthesis">
+          <span>跨書整合：高績效教練 × 台哥大破繭</span>
+          <span class="slide-num-pill">S15</span>
+        </a>
+        <a class="slide-nav-item" data-target="slide-16" data-layer="synthesis">
+          <span>總結：90天落地藍圖與五維度自檢</span>
+          <span class="slide-num-pill">S16</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main Slide Deck Stage -->
+    <main class="deck-stage">
+      <div class="slides-wrapper">
+
+        <!-- ================================================================
+             SLIDE 01: COVER & EXECUTIVE SUMMARY
+             ================================================================ -->
+        <section class="mck-slide active-slide" id="slide-01">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 01 / 16 ｜ EXECUTIVE BRIEFING COVER &amp; CORE THESIS</div>
+              <span class="badge-mck badge-navy">總綱與轉型基準</span>
+            </div>
+            <h2 class="mck-action-title">
+              擺脫「月薪成癮」的工資奴役陷阱：以 <span class="hl-gold">6P 事業系統</span> 將個人熱愛轉化為高槓桿、可規模化的超級個體事業
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 1 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 1 ｜ AUTHOR TRANSFORMATION &amp; WEALTH TRAJECTORY</span>
+                  <span class="exhibit-title">凱莉彭「矽谷裁員→超級個體」轉型時間軸與財富雙軌對比</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <img src="images/hero-startup.jpg" alt="從線性打工階梯邁向指數級數位槓桿">
+                  <svg viewBox="0 0 600 135" width="100%">
+                    <rect width="600" height="135" rx="6" fill="#051C2C"/>
+                    <!-- Timeline Line -->
+                    <line x1="40" y1="52" x2="560" y2="52" stroke="#0066CC" stroke-width="3"/>
+                    <!-- Node 1 -->
+                    <circle cx="75" cy="52" r="9" fill="#38BDF8"/>
+                    <text x="75" y="30" text-anchor="middle" fill="#38BDF8" font-size="11" font-weight="800">2020.05 覺醒</text>
+                    <text x="75" y="78" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="700">Airbnb 裁員 25%</text>
+                    <text x="75" y="96" text-anchor="middle" fill="#94A3B8" font-size="10">休3個月寫9萬字</text>
+                    <text x="75" y="112" text-anchor="middle" fill="#94A3B8" font-size="10">首支短影音破萬粉</text>
+                    <!-- Node 2 -->
+                    <circle cx="230" cy="52" r="9" fill="#38BDF8"/>
+                    <text x="230" y="30" text-anchor="middle" fill="#38BDF8" font-size="11" font-weight="800">2021 在職試錯</text>
+                    <text x="230" y="78" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="700">給自己1年找退路</text>
+                    <text x="230" y="96" text-anchor="middle" fill="#94A3B8" font-size="10">試水電商/物流平台</text>
+                    <text x="230" y="112" text-anchor="middle" fill="#94A3B8" font-size="10">同事突發重病促決心</text>
+                    <!-- Node 3 -->
+                    <circle cx="390" cy="52" r="10" fill="#F59E0B"/>
+                    <text x="390" y="30" text-anchor="middle" fill="#FBBF24" font-size="11" font-weight="800">2022.02 裸辭</text>
+                    <text x="390" y="78" text-anchor="middle" fill="#FDE68A" font-size="11" font-weight="700">2萬粉・變現 0 元</text>
+                    <text x="390" y="96" text-anchor="middle" fill="#CBD5E1" font-size="10">靠儲備金與低物慾</text>
+                    <text x="390" y="112" text-anchor="middle" fill="#CBD5E1" font-size="10">All-in 自媒體複利</text>
+                    <!-- Node 4 -->
+                    <circle cx="535" cy="52" r="11" fill="#10B981"/>
+                    <text x="535" y="30" text-anchor="middle" fill="#34D399" font-size="11" font-weight="800">2023–2025 爆發</text>
+                    <text x="535" y="78" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="700">年入數百萬超越矽谷</text>
+                    <text x="535" y="96" text-anchor="middle" fill="#A7F3D0" font-size="10">粉絲10倍・產品階梯</text>
+                    <text x="535" y="112" text-anchor="middle" fill="#A7F3D0" font-size="10">0全職・非雇傭團隊</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：《把熱愛變成事業》前言與第 1 章（凱莉彭，2026）。註：書中金額單位為人民幣。</div>
+              </div>
+
+              <!-- Right: Core Insights & 3 Consultant Criteria -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card navy-top">
+                  <div class="bucket-title">📖 書籍定位與核心命題（Why This Book Matters）</div>
+                  <ul class="bucket-list">
+                    <li><strong>作者背景</strong>：武漢大學本科、伊利諾大學香檳分校碩士、前矽谷 Airbnb 資料科學家（曾領近七位數美元年薪，卻陷入「上班如上墳」的心理消耗）。</li>
+                    <li><strong>核心覺醒</strong>：大公司響亮名號的紅利有時間與空間限制；<strong>經營個人品牌與自有事業，才是真正帶得走的複利資產</strong>。</li>
+                    <li><strong>全書主線</strong>：展開 <strong>6P 事業公式</strong>（熱愛 Passion → 圈子 Peer Group → 個人品牌 Personal Brand → 產品 Product → 銷售 Promotion → 合作夥伴 Partnerships）。</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card gold-top">
+                  <div class="bucket-title">🎯 資深創業顧問給「評估轉型者」的三個先決判斷點</div>
+                  <ul class="bucket-list">
+                    <li><strong>判斷點 1｜絕不跳過第 1 章財務基準線</strong>：後八章所有方法都預設你有「無收入可撐半年到一年」的緩衝；沒有這條線，MVP 試錯與複利等待都不成立。</li>
+                    <li><strong>判斷點 2｜先驗證需求，再談品牌與規模</strong>：對已有專業技能者，<strong>第 5 章「一對一付費諮詢」是成本最低起點</strong>，同時驗證需求、交付力並創造現金流，且不需粉絲量。</li>
+                    <li><strong>判斷點 3｜跨市場工具轉譯（顧問延伸推論）</strong>：原書綁定大陸微信私域生態；在台灣市場須轉譯為 <strong>LINE OA ／ IG ／ Threads ／ FB 社團</strong>，「私域＝可反覆觸達的名單」本質不變。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 1: Book Metadata & Three Diagnostic Guardrails -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>評估維度</th>
+                    <th>傳統職場打工思維（安祖爾搬磚）</th>
+                    <th>本書超級個體事業思維（朱瑪造系統）</th>
+                    <th>學員閱讀本書前必設護欄（顧問校準）</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>財務與風險觀</strong></td>
+                    <td>收入隨升職增加，但生活水準同步膨脹，被迫依賴下月薪水。</td>
+                    <td><strong>生活水準遠低於收入水準</strong>（如作者住 650 美元客廳），換取選擇自由。</td>
+                    <td>計算過去 3 個月「支出÷稅後收入」，必須壓在 <strong>70% 以下</strong>並開立獨立儲備金帳戶。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>變現啟動時機</strong></td>
+                    <td>等準備好完美證照、等副業超過主業、等累積十萬粉絲才敢賣。</td>
+                    <td><strong>先開槍再瞄準</strong>：2 萬粉 0 變現敢轉型、1,000 鐵桿粉絲即可活、先賣海報再做課。</td>
+                    <td>已有領域經驗者，直接跳到第 5 章接 <strong>3–5 位一對一付費諮詢</strong>，不走漫長散養漲粉路。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>組織與時間觀</strong></td>
+                    <td>用一份時間換一份薪水；創業就想租辦公室、招全職員工、找合夥人。</td>
+                    <td>善用<strong>零邊際成本數位槓桿</strong>；在路上找人，近 3 年 <strong>0 全職員工</strong>（全按量結算兼職）。</td>
+                    <td>書中案例 100% 為存活成功者（倖存者偏差），每項試錯必須自設<strong>時間與金額停損點</strong>。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>💡 <strong>Takeaway 關鍵結論：</strong>多數人創業失敗不在中間五步做錯，而在頭（Ch1 現金儲備不足）尾（Ch9 時間被緊急瑣事吃光）失守。</span>
+              <span>章節對應：前言、第 1 章、全書整合建議</span>
+            </div>
+
+            <!-- Speaker Notes -->
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 01 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>本書旨在幫助受困於「月薪成癮」的職場專業人士，透過 6P 事業模型與數位槓桿，低風險走通「小而美超級個體」的商業閉環。<br>
+                <strong>② 補充說明：</strong>作者凱莉彭曾任矽谷 Airbnb 資料科學家，年薪近百萬美元，卻在 2020 年遇上裁員 25%（1,900 人）與 30 多歲同事突發腦出血進 ICU 的衝擊。她在 2022 年 2 月以 2 萬粉絲、0 元變現裸辭，一年內營收超越矽谷年薪。顧問特別提醒：閱讀本書須先守住「半年至一年生活儲備金」的底線。<br>
+                <strong>③ 下一頁轉場：</strong>理解了作者的轉型起點後，下一頁我們用一張全書架構圖，看清 6P 模型與九大章節是如何環環相扣、層層推進的。
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 1 of 16</span>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SLIDE 02: FULL-BOOK ARCHITECTURE & 6P SYSTEM
+             ================================================================ -->
+        <section class="mck-slide" id="slide-02">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 02 / 16 ｜ FULL-BOOK ARCHITECTURE &amp; 6P ENGINE</div>
+              <span class="badge-mck badge-blue">全書邏輯骨架</span>
+            </div>
+            <h2 class="mck-action-title">
+              全書架構總覽：以「<span class="hl-blue">6P 事業模型</span>」為核心引擎，串聯地基、驗證、放大三階段與頭尾風險時間護欄
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 2 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 2 ｜ 3-LAYER ARCHITECTURE &amp; TENSION LINKS</span>
+                  <span class="exhibit-title">九大章節實線依賴關係（前提）與虛線張力關係（校準）</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <svg viewBox="0 0 620 300" width="100%">
+                    <rect width="620" height="300" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+                    <!-- 3 Horizontal Bands -->
+                    <rect x="14" y="14" width="592" height="82" rx="5" fill="#E0F2FE" stroke="#0284C7"/>
+                    <text x="26" y="34" fill="#0369A1" font-size="11" font-weight="800">🟦 地基層 (Ch 1–3)：有收入前，解決「要不要做、做什麼、跟誰做」</text>
+                    <rect x="26" y="44" width="175" height="42" rx="4" fill="#051C2C"/>
+                    <text x="113" y="63" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="700">Ch1 逃離陷阱・6P總綱</text>
+                    <text x="113" y="78" text-anchor="middle" fill="#38BDF8" font-size="9.5">財務緩衝線・三條脫離路徑</text>
+
+                    <rect x="222" y="44" width="175" height="42" rx="4" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.5"/>
+                    <text x="309" y="63" text-anchor="middle" fill="#051C2C" font-size="11" font-weight="700">Ch2 發現熱愛 (P1)</text>
+                    <text x="309" y="78" text-anchor="middle" fill="#0369A1" font-size="9.5">IKIGAI・1000鐵桿粉絲</text>
+
+                    <rect x="418" y="44" width="175" height="42" rx="4" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.5"/>
+                    <text x="505" y="63" text-anchor="middle" fill="#051C2C" font-size="11" font-weight="700">Ch3 加入圈子 (P2)</text>
+                    <text x="505" y="78" text-anchor="middle" fill="#0369A1" font-size="9.5">五人平均值・先當群紅</text>
+
+                    <!-- Band 2: Validation -->
+                    <rect x="14" y="108" width="592" height="82" rx="5" fill="#D1FAE5" stroke="#059669"/>
+                    <text x="26" y="128" fill="#065F46" font-size="11" font-weight="800">🟩 驗證層 (Ch 4, 5, 7)：最短現金流閉環「被看見 → 有東西賣 → 賣得出去」</text>
+                    <rect x="26" y="138" width="175" height="42" rx="4" fill="#FFFFFF" stroke="#059669" stroke-width="1.5"/>
+                    <text x="113" y="157" text-anchor="middle" fill="#051C2C" font-size="11" font-weight="700">Ch4 個人品牌 (P3)</text>
+                    <text x="113" y="172" text-anchor="middle" fill="#047857" font-size="9.5">6歲聽懂・公域沉澱私域</text>
+
+                    <rect x="222" y="138" width="175" height="42" rx="4" fill="#065F46"/>
+                    <text x="309" y="157" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="700">Ch5 打造產品 (P4)</text>
+                    <text x="309" y="172" text-anchor="middle" fill="#6EE7B7" font-size="9.5">海報MVP・老媽測試・1對1</text>
+
+                    <rect x="418" y="138" width="175" height="42" rx="4" fill="#FFFFFF" stroke="#059669" stroke-width="1.5"/>
+                    <text x="505" y="157" text-anchor="middle" fill="#051C2C" font-size="11" font-weight="700">Ch7 銷售推廣 (P5)</text>
+                    <text x="505" y="172" text-anchor="middle" fill="#047857" font-size="9.5">只漲不降・7-11-4排隊效應</text>
+
+                    <!-- Band 3: Scale -->
+                    <rect x="14" y="202" width="592" height="84" rx="5" fill="#FEF3C7" stroke="#D97706"/>
+                    <text x="26" y="222" fill="#92400E" font-size="11" font-weight="800">🟨 放大層 (Ch 6, 8, 9)：驗證跑通後，把一次性收入放大為「可複製系統」</text>
+                    <rect x="26" y="232" width="175" height="42" rx="4" fill="#FFFFFF" stroke="#D97706" stroke-width="1.5"/>
+                    <text x="113" y="251" text-anchor="middle" fill="#051C2C" font-size="11" font-weight="700">Ch6 放大規模</text>
+                    <text x="113" y="266" text-anchor="middle" fill="#B45309" font-size="9.5">產品階梯・年收四階段</text>
+
+                    <rect x="222" y="232" width="175" height="42" rx="4" fill="#FFFFFF" stroke="#D97706" stroke-width="1.5"/>
+                    <text x="309" y="251" text-anchor="middle" fill="#051C2C" font-size="11" font-weight="700">Ch8 合作夥伴 (P6)</text>
+                    <text x="309" y="266" text-anchor="middle" fill="#B45309" font-size="9.5">在路上找人・非雇傭兼職</text>
+
+                    <rect x="418" y="232" width="175" height="42" rx="4" fill="#051C2C" stroke="#F59E0B" stroke-width="2"/>
+                    <text x="505" y="251" text-anchor="middle" fill="#FDE68A" font-size="11" font-weight="700">Ch9 槓桿與複利</text>
+                    <text x="505" y="266" text-anchor="middle" fill="#FFFFFF" font-size="9.5">數位槓桿・逃離老鼠陷阱</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：整理自《把熱愛變成事業》逐章分析第三節「章節關係網絡圖」。</div>
+              </div>
+
+              <!-- Right: Dependency & Tension Logic -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card">
+                  <div class="bucket-title">🔗 實線依賴邏輯：為什麼順序不能顛倒？</div>
+                  <ul class="bucket-list">
+                    <li><strong>熱愛 (Ch2) → 圈子 (Ch3) &amp; 品牌 (Ch4)</strong>：先有熱愛才能持續輸出；熱愛需在圈子裡碰撞，圈內痛點正是第一代產品 (Ch5) 的需求來源。</li>
+                    <li><strong>單品驗證 (Ch5) → 產品體系 (Ch6)</strong>：單一產品被市場真金白銀驗證後，才向上疊加產品階梯；切忌一開始就搭完整階梯。</li>
+                    <li><strong>規模交付 (Ch6/Ch7) → 合作夥伴 (Ch8)</strong>：銷售放量後才產生交付人力需求，且最先外包「交付運營」，最後才分出「內容流量」。</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card gold-top">
+                  <div class="bucket-title">⚡ 四組關鍵張力關係（需動態校準）</div>
+                  <ul class="bucket-list">
+                    <li><strong>Ch1 ⇢ Ch5（風險前提）</strong>：必須先有半年至一年財務緩衝，才有底氣做 MVP 試錯而不致因短期無收入崩潰。</li>
+                    <li><strong>Ch4 ⇢ Ch7（專業 vs 流量／粉絲 vs 私域）</strong>：既要具備領先 3–4 級的專業，又不能講專業黑話；公域漲粉若不導流私域則毫無抗風險力。</li>
+                    <li><strong>Ch7 ⇢ Ch6（低價走量 vs 精準高客單）</strong>：無百萬流量時賣 199 元課必虧，應走 1,000–10,000 精準粉絲的高客單升階路徑。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 2: 9-Chapter Master Matrix -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>階層</th>
+                    <th>章節與對應 6P</th>
+                    <th>本章解決的核心問題</th>
+                    <th>代表性工具與法則</th>
+                    <th>關鍵量化指標 (KPI)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>🟦 地基層</strong></td>
+                    <td><strong>Ch1 逃離陷阱 ／ Ch2 熱愛(P1) ／ Ch3 圈子(P2)</strong></td>
+                    <td>如何存夠試錯底氣？如何找到可變現的差異化優勢並借外力啟動？</td>
+                    <td>三條脫離路徑、6P模型、IKIGAI、1,000鐵桿粉絲、五人平均值、先當群紅</td>
+                    <td>支出占收入＜70%；副業達主業 50% 轉正；新社群無償幫人 ≥3 次</td>
+                  </tr>
+                  <tr>
+                    <td><strong>🟩 驗證層</strong></td>
+                    <td><strong>Ch4 品牌(P3) ／ Ch5 產品(P4) ／ Ch7 銷售(P5)</strong></td>
+                    <td>如何讓目標客群看見並信任你？如何零成本驗證真需求並高價成交？</td>
+                    <td>定位公式、私域 5 步、Why 3問、老媽測試、海報 MVP、7-11-4 與 5C 原則</td>
+                    <td>海報預售 ≥5–10 份付款；1對1諮詢 ≥3 單；觸達 7小時×11次×4平台</td>
+                  </tr>
+                  <tr>
+                    <td><strong>🟨 放大層</strong></td>
+                    <td><strong>Ch6 放大規模 ／ Ch8 夥伴(P6) ／ Ch9 槓桿複利</strong></td>
+                    <td>如何突破一人時間上限，將單品升級為年入百萬至千萬的複利系統？</td>
+                    <td>產品階梯、收入四階段、在路上找人、非雇傭兼職、納瓦爾三大槓桿</td>
+                    <td>產品階梯提升 LTV 30%–50%；0 全職彈性外包；每週鎖定 ≥3 小時重要不緊急事</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>💡 <strong>Takeaway 關鍵結論：</strong>把 Ch4（品牌）、Ch5（產品）、Ch7（銷售）視為「最短現金流三角閉環」——先跑通這三角，再開啟 Ch6 與 Ch8 的放大引擎。</span>
+              <span>章節對應：全書整合建議、章節關係網絡圖</span>
+            </div>
+
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 02 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>全書九章可解構為「地基層、驗證層、放大層」三階架構，並由 6P 模型串聯成一條嚴密的因果鏈。<br>
+                <strong>② 補充說明：</strong>請特別留意圖中的綠色區塊「驗證層（Ch4, 5, 7）」，這是個人創業者最短的現金流閉環。很多人的失敗在於地基還沒打穩、或者單品還沒在驗證層賣出去，就急著去放大層搭四層產品階梯或招全職員工。<br>
+                <strong>③ 下一頁轉場：</strong>接下來我們正式進入第一階段「地基層」，從第 1 章如何逃離每月領工資的成癮陷阱開始。
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 2 of 16</span>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SLIDE 03: CHAPTER 1 (PART A) - ESCAPING THE SALARY TRAP
+             ================================================================ -->
+        <section class="mck-slide" id="slide-03">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 03 / 16 ｜ CHAPTER 1 (PART A): ESCAPING THE SALARY TRAP</div>
+              <span class="badge-mck badge-blue">🟦 地基層：風險護欄</span>
+            </div>
+            <h2 class="mck-action-title">
+              第 1 章（上）逃離工資陷阱：控制<span class="hl-blue">支出增速低於收入增速</span>，並以「<span class="hl-gold">副業達主業 50%</span>」作為理性轉正門檻
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 3 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 3 ｜ LIFESTYLE CREEP VS. FREEDOM GAP</span>
+                  <span class="exhibit-title">工資奴役陷阱（支出隨加薪膨脹）vs. 選擇權剪刀差（生活水準＜收入）</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <svg viewBox="0 0 600 250" width="100%">
+                    <rect width="600" height="250" rx="6" fill="#FFFFFF" stroke="#E2E8F0"/>
+                    <!-- Left Chart: Salary Trap -->
+                    <text x="150" y="26" text-anchor="middle" fill="#DC2626" font-size="12" font-weight="800">❌ 工資奴役陷阱（生活水準＝收入）</text>
+                    <line x1="35" y1="205" x2="270" y2="205" stroke="#64748B" stroke-width="1.5"/>
+                    <line x1="35" y1="45" x2="35" y2="205" stroke="#64748B" stroke-width="1.5"/>
+                    <!-- Income Line -->
+                    <path d="M 45 185 L 110 150 L 180 110 L 255 60" fill="none" stroke="#0066CC" stroke-width="3"/>
+                    <!-- Expense Line hugging Income -->
+                    <path d="M 45 190 L 110 156 L 180 116 L 255 66" fill="none" stroke="#DC2626" stroke-width="3" stroke-dasharray="5,3"/>
+                    <text x="195" y="62" fill="#0066CC" font-size="10" font-weight="700">薪資收入</text>
+                    <text x="195" y="95" fill="#DC2626" font-size="10" font-weight="700">消費升級支出</text>
+                    <rect x="55" y="135" width="190" height="46" rx="4" fill="#FEF2F2" stroke="#FCA5A5"/>
+                    <text x="150" y="154" text-anchor="middle" fill="#991B1B" font-size="10" font-weight="700">儲蓄緩衝 ≈ 0（月薪成癮）</text>
+                    <text x="150" y="171" text-anchor="middle" fill="#B91C1C" font-size="9.5">永遠覺得錢不夠，不敢冒任何險</text>
+
+                    <!-- Divider -->
+                    <line x1="300" y1="20" x2="300" y2="230" stroke="#CBD5E1" stroke-dasharray="4,4"/>
+
+                    <!-- Right Chart: Freedom Gap -->
+                    <text x="450" y="26" text-anchor="middle" fill="#059669" font-size="12" font-weight="800">✅ 選擇自由剪刀差（生活水準 ≪ 收入）</text>
+                    <line x1="330" y1="205" x2="575" y2="205" stroke="#64748B" stroke-width="1.5"/>
+                    <line x1="330" y1="45" x2="330" y2="205" stroke="#64748B" stroke-width="1.5"/>
+                    <!-- Shaded Freedom Area -->
+                    <polygon points="340,180 560,55 560,155 340,185" fill="#D1FAE5" opacity="0.7"/>
+                    <path d="M 340 180 L 560 55" fill="none" stroke="#051C2C" stroke-width="3"/>
+                    <path d="M 340 185 L 560 155" fill="none" stroke="#059669" stroke-width="3"/>
+                    <text x="480" y="62" fill="#051C2C" font-size="10" font-weight="800">實際收入增長</text>
+                    <text x="470" y="175" fill="#059669" font-size="10" font-weight="800">克制生活支出（如$650客廳）</text>
+                    <text x="475" y="115" text-anchor="middle" fill="#065F46" font-size="11" font-weight="800">自由緩衝區（6–12個月儲備）</text>
+                    <text x="450" y="228" text-anchor="middle" fill="#475569" font-size="10">關鍵不在絕對金額，而在「支出增速落後於收入增速」</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：《把熱愛變成事業》第 1 章。作者裸辭前刻意搬入月租 650 美元客廳，大幅壓低固定燃燒率。</div>
+              </div>
+
+              <!-- Right: Core Insights -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card">
+                  <div class="bucket-title">📌 重點摘要：月薪枷鎖與三條脫離路徑</div>
+                  <ul class="bucket-list">
+                    <li><strong>工資奴役陷阱</strong>：月薪具高度成癮性，一旦生活品質隨加薪同步升級（買豪車、背高額房貸），就會徹底喪失說「不」的自由。</li>
+                    <li><strong>脫離陷阱三路徑</strong>：① <strong>被動改變</strong>（裁員、重病等外力推一把，不可控）；② <strong>主動準備</strong>（存夠半年至一年生活儲備金再探索）；③ <strong>主業外發展副業</strong>（待成熟後轉正，風險最低）。</li>
+                    <li><strong>轉正量化門檻</strong>：副業轉正<strong>不需要超過主業收入</strong>！只要達到<strong>主業收入的一半（50%）</strong>，或判斷其具備「<strong>可持續、可複製、可放大</strong>」三特質即可考慮轉型。</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card gold-top">
+                  <div class="bucket-title">💡 顧問亮點洞察：破除兩大拖延藉口</div>
+                  <ul class="bucket-list">
+                    <li><strong>破除「副業打平主業才敢辭」盲點</strong>：多數人默認副業要 100% 追平主業才敢辭，但在只用下班零碎時間的情況下極難達成，導致無限期拖延；「50% 門檻＋三特質」把模糊恐懼轉為具體財務指標。</li>
+                    <li><strong>破除「等賺多一點再存錢」盲點</strong>：自由的關鍵不是絕對薪資高低，而是「支出增速是否落後於收入增速」——這是任何收入層級今天就能動手控制的變數。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 3: Comparing the 3 Escape Paths -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>脫離工資陷阱路徑</th>
+                    <th>觸發條件與特徵</th>
+                    <th>風險等級</th>
+                    <th>轉正／啟動核心檢核指標</th>
+                    <th>本週／本月立即落地行動</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>路徑一：被動改變</strong></td>
+                    <td>遭遇裁員、生病、家庭變故等不可控外部衝擊（如作者 2020 年被 Airbnb 裁員）。</td>
+                    <td><span class="badge-mck" style="background:#FEE2E2; color:#991B1B;">極高（不可控）</span></td>
+                    <td>平時是否已備妥緊急預備金與可帶走的個人品牌／技能？</td>
+                    <td>切勿等外力降臨才準備；立即啟動路徑二與路徑三的雙重布局。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>路徑二：主動準備（儲備金）</strong></td>
+                    <td>刻意壓低生活物慾，存夠 <strong>6–12 個月生活儲備金</strong>後給自己一段全職探索期。</td>
+                    <td><span class="badge-mck badge-gold">中等（需自律）</span></td>
+                    <td>支出／稅後收入比例是否 <strong>＜70%</strong>？獨立儲備帳戶是否達標？</td>
+                    <td><strong>本週：</strong>盤點近 3 月支出，若＞70% 立即砍 1 項固定支出（目標降 5 個百分點）；開立獨立帳戶存入月生活費 ≥10%。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>路徑三：副業成熟轉正（首選）</strong></td>
+                    <td>白天保住主業現金流，不加班、不爬職場梯子，把下班與週末全投入副業測試。</td>
+                    <td><span class="badge-mck badge-emerald">最低（最穩健）</span></td>
+                    <td>① 副業月收 ≥ <strong>主業月收 50%</strong>；或 ② 具備<strong>可持續、可複製、可放大</strong>三特質。</td>
+                    <td><strong>本月：</strong>計算近 3 月「副業÷主業」收入比；若無副業，本月內選定 1 項技能完成首次小規模收費嘗試。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>💡 <strong>Takeaway 關鍵結論：</strong>不要用「我在等機會」自我安慰——誠實檢視自己正走在哪一條脫離路徑，本週先把支出比砍進 70% 以內。</span>
+              <span>章節對應：第 1 章《逃離陷阱》（上）</span>
+            </div>
+
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 03 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>逃離工資陷阱的第一步是拉開「收入與支出的剪刀差」，並以「副業達主業 50% 或具三特質」作為理性離職判準。<br>
+                <strong>② 補充說明：</strong>作者在矽谷年薪近百萬美元時，為了準備裸辭，主動搬進月租僅 650 美元的客廳隔間。她指出多數人不敢改變是因為消費隨薪資同步升級。顧問建議本週立即核算近三個月支出占比，若超過 70%，先砍除一項固定訂閱或非必要開支，讓支出率下降至少 5%（此 5% 為顧問延伸量化指標）。<br>
+                <strong>③ 下一頁轉場：</strong>有了財務緩衝與脫離路徑後，思維上該如何從「打工人」切換成「創業者」？下一頁我們拆解五大思維躍遷與 6P 模型。
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 3 of 16</span>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SLIDE 04: CHAPTER 1 (PART B) - FAST TRACK MINDSET & 6P MODEL
+             ================================================================ -->
+        <section class="mck-slide" id="slide-04">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 04 / 16 ｜ CHAPTER 1 (PART B): 5 MINDSET SHIFTS &amp; 6P MODEL</div>
+              <span class="badge-mck badge-blue">🟦 地基層：6P 事業總綱</span>
+            </div>
+            <h2 class="mck-action-title">
+              第 1 章（下）走上創業快車道：完成<span class="hl-blue">五大生產者思維躍遷</span>，並以 <span class="hl-gold">6P 模型</span> 動態配置不同階段資源
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 4 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 4 ｜ THE 6P BUSINESS FLYWHEEL &amp; PIPELINE PARABLE</span>
+                  <span class="exhibit-title">把熱愛變成事業的「6P 六邊形要素模型」與搬磚 vs. 造機器對比</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <svg viewBox="0 0 600 250" width="100%">
+                    <rect width="600" height="250" rx="6" fill="#051C2C"/>
+                    <!-- Hexagon Center -->
+                    <polygon points="185,35 285,75 285,175 185,215 85,175 85,75" fill="rgba(0,102,204,0.2)" stroke="#38BDF8" stroke-width="2"/>
+                    <circle cx="185" cy="125" r="36" fill="#D97706"/>
+                    <text x="185" y="122" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="900">6P 事業</text>
+                    <text x="185" y="138" text-anchor="middle" fill="#FEF3C7" font-size="10" font-weight="700">核心公式</text>
+
+                    <!-- 6 Nodes around Hexagon -->
+                    <rect x="130" y="12" width="110" height="28" rx="4" fill="#0066CC"/>
+                    <text x="185" y="30" text-anchor="middle" fill="#FFFFFF" font-size="10.5" font-weight="800">1. Passion 熱愛</text>
+
+                    <rect x="260" y="55" width="115" height="28" rx="4" fill="#0F2942" stroke="#38BDF8"/>
+                    <text x="317" y="73" text-anchor="middle" fill="#FFFFFF" font-size="10.5" font-weight="800">2. Peer Group 圈子</text>
+
+                    <rect x="260" y="162" width="115" height="28" rx="4" fill="#0F2942" stroke="#38BDF8"/>
+                    <text x="317" y="180" text-anchor="middle" fill="#FFFFFF" font-size="10.5" font-weight="800">3. Personal Brand</text>
+
+                    <rect x="130" y="206" width="110" height="28" rx="4" fill="#059669"/>
+                    <text x="185" y="224" text-anchor="middle" fill="#FFFFFF" font-size="10.5" font-weight="800">4. Product 產品</text>
+
+                    <rect x="10" y="162" width="112" height="28" rx="4" fill="#0F2942" stroke="#F59E0B"/>
+                    <text x="66" y="180" text-anchor="middle" fill="#FDE68A" font-size="10.5" font-weight="800">5. Promotion 銷售</text>
+
+                    <rect x="10" y="55" width="112" height="28" rx="4" fill="#0F2942" stroke="#F59E0B"/>
+                    <text x="66" y="73" text-anchor="middle" fill="#FDE68A" font-size="10.5" font-weight="800">6. Partnerships</text>
+
+                    <!-- Right Panel: 5 Fast-Track Mindsets -->
+                    <rect x="392" y="18" width="194" height="214" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)"/>
+                    <text x="489" y="40" text-anchor="middle" fill="#FBBF24" font-size="11.5" font-weight="800">🚀 創業快車道五大思維轉變</text>
+                    <text x="404" y="66" fill="#FFFFFF" font-size="10.5" font-weight="700">① 消費者 ➔ 生產者</text>
+                    <text x="414" y="81" fill="#94A3B8" font-size="9.5">停止刷手機消遣，開始創作輸出</text>
+                    <text x="404" y="103" fill="#FFFFFF" font-size="10.5" font-weight="700">② 追求影響力＝規模 × 深度</text>
+                    <text x="414" y="118" fill="#94A3B8" font-size="9.5">服務萬人廣度或解決千元痛點深度</text>
+                    <text x="404" y="140" fill="#FFFFFF" font-size="10.5" font-weight="700">③ 選擇有槓桿的工作</text>
+                    <text x="414" y="155" fill="#94A3B8" font-size="9.5">軟體、內容、人力槓桿放大產出</text>
+                    <text x="404" y="177" fill="#FFFFFF" font-size="10.5" font-weight="700">④ 遠離阻礙你改變的勸退者</text>
+                    <text x="404" y="202" fill="#34D399" font-size="10.5" font-weight="800">⑤ 點子不值錢，執行才是王道！</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：《把熱愛變成事業》第 1 章（安祖爾搬磚 vs. 朱瑪造機器寓言、6P 模型）。</div>
+              </div>
+
+              <!-- Right: Key Insights -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card">
+                  <div class="bucket-title">🏗️ 安祖爾搬磚 vs. 朱瑪造機器：指數級差異的根源</div>
+                  <ul class="bucket-list">
+                    <li><strong>線性出賣時間（搬磚）</strong>：打工族按小時或月領取固定報酬，一旦停止搬磚，收入立刻歸零，且體力與時間有絕對上限。</li>
+                    <li><strong>打造可規模化系統（造機器）</strong>：創業者前期花時間設計內容、產品與自動化交付系統，初期看似慢，但機器運轉後產生<strong>脫鉤於時間的指數級回報</strong>。</li>
+                    <li><strong>影響力公式（規模 × 深度）</strong>：要麼做大廣度（影響十萬人），要麼做深單客價值（深度解決高痛點問題收高價）——超級個體起步應先攻「深度」。</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card emerald-top">
+                  <div class="bucket-title">🧭 6P 模型的動態優先級（不同階段重點不同）</div>
+                  <ul class="bucket-list">
+                    <li><strong>0 到 1 探索期</strong>：優先搞定 <strong>Passion（熱愛）</strong>與 <strong>Peer Group（圈子）</strong>，找到方向與第一批同頻支持者。</li>
+                    <li><strong>1 到 10 變現期</strong>：全力聚焦 <strong>Product（產品）</strong>、<strong>Personal Brand（個人品牌）</strong>與 <strong>Promotion（銷售）</strong>，跑通最小現金流閉環。</li>
+                    <li><strong>10 到 100 放大期</strong>：引入 <strong>Partnerships（合作夥伴／非雇傭網絡）</strong>，放大系統規模。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 4: 6P Self-Assessment & Action Plan -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>6P 要素</th>
+                    <th>核心檢核問題（用一句話寫下現狀：有／沒有／待加強）</th>
+                    <th>起步階段常見誤區</th>
+                    <th>本月落地行動與量化成功指標 (KPI)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1. Passion 熱愛</strong></td>
+                    <td>我是否有一件在看不到短期回報時，仍願意持續投入 3 個月以上的事？</td>
+                    <td>把三分鐘熱度的「消費型興趣」誤當成可生產的「熱愛」。</td>
+                    <td rowspan="3"><strong>行動 1（6P自評）：</strong>本月對照左列 6P 清單逐項用一句話寫下現狀，標出<strong>最弱的 1–2 項</strong>作為下個月優先補強重點。<br><strong>行動 2（環境淨化）：</strong>列出 3 位勸你「別冒險」的人與 3 位支持你探索的人，本月與支持者完成 1 次實質深度對話並記錄具體建議。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>2. Peer Group 圈子</strong></td>
+                    <td>我身邊最常接觸的 5 個人，是在打壓我還是已經走在我嚮往的創業路上？</td>
+                    <td>留在原打工圈問同事「我該不該離職創業」，得到100%勸退。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3. Personal Brand 品牌</strong></td>
+                    <td>外界提起我時，是否有清晰的專業標籤與持續輸出的公開作品？</td>
+                    <td>埋頭苦幹當職場「隱形人」，誤以為酒香不怕巷子深。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>4. Product 產品</strong></td>
+                    <td>我是否有一個能幫客戶解決具體痛點、且有人願意真金白銀付費的服務？</td>
+                    <td>沒有產品只靠「用愛發電」，或憋大招錄課半年卻無人買單。</td>
+                    <td rowspan="3"><strong>行動 3（首次變現測試）：</strong>選定 1 項現有技能，在本月內完成第一次「從消費者變生產者」的變現嘗試（接 1 單諮詢或發 1 篇付費/導流內容），產出具體數據紀錄。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>5. Promotion 銷售</strong></td>
+                    <td>我是否敢大方談錢、並在私域建立持續穩定觸達的銷售轉化機制？</td>
+                    <td>臉皮薄不好意思向熟人或粉絲收費，等流量大了才敢賣。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>6. Partnerships 夥伴</strong></td>
+                    <td>我是否擁有教練補足認知短板，以及按工作量結算的彈性兼職協力網？</td>
+                    <td>還沒跑通業務就拉朋友合夥分股權，或過早聘請全職員工。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>💡 <strong>Takeaway 關鍵結論：</strong>點子不值錢，執行才是王道！今天就把手機從「消費工具」切換為「生產工具」，完成你的 6P 現狀自評表。</span>
+              <span>章節對應：第 1 章《逃離陷阱》（下）</span>
+            </div>
+
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 04 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>從打工慢車道切入創業快車道，必須完成五大生產者思維轉變，並用 6P 模型定期盤點事業短板。<br>
+                <strong>② 補充說明：</strong>書中引用安祖爾搬磚與朱瑪造機器的故事說明：打工是線性出賣時間，造系統才能享受指數級複利。請學員本週務必完成表格中的「6P 一句話自評表」，找出當下最卡關的 1–2 項優先突破。<br>
+                <strong>③ 下一頁轉場：</strong>6P 的第一個 P 是 Passion（熱愛）。到底該怎麼區分一時興起與真正的超能力？下一頁進入第 2 章。
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 4 of 16</span>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SLIDE 05: CHAPTER 2 - DISCOVERING PASSION & SUPERPOWER
+             ================================================================ -->
+        <section class="mck-slide" id="slide-05">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 05 / 16 ｜ CHAPTER 2: PASSION, IKIGAI &amp; 1,000 TRUE FANS</div>
+              <span class="badge-mck badge-blue">🟦 地基層：P1 發現熱愛</span>
+            </div>
+            <h2 class="mck-action-title">
+              第 2 章 發現熱愛與超能力：脫掉「<span class="hl-gold">孔乙己的長衫</span>」，在實踐中尋找「<span class="hl-blue">熱愛×擅長×解決真實問題</span>」的變現交集
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 5 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 5 ｜ IKIGAI INTERSECTION &amp; 1,000 TRUE FANS MODEL</span>
+                  <span class="exhibit-title">IKIGAI 四象限超能力交集 × 凱文·凱利「1,000 鐵桿粉絲」小眾變現基礎</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <img src="images/ikigai-superpower.jpg" alt="IKIGAI 四象限與 1000 鐵桿粉絲網絡">
+                  <svg viewBox="0 0 600 130" width="100%">
+                    <rect width="600" height="130" rx="6" fill="#051C2C"/>
+                    <!-- Left: Monetization 2 Conditions -->
+                    <rect x="16" y="14" width="275" height="102" rx="5" fill="#0F2942" stroke="#0066CC"/>
+                    <text x="153" y="35" text-anchor="middle" fill="#38BDF8" font-size="11" font-weight="800">🔑 熱愛可變現的兩大必要條件</text>
+                    <text x="28" y="60" fill="#FFFFFF" font-size="10.5" font-weight="700">條件 ①：真的熱愛且擅長</text>
+                    <text x="28" y="76" fill="#94A3B8" font-size="9.5">沒短期正回饋也願堅持（古怪特質＝差異化超能力）</text>
+                    <text x="28" y="98" fill="#FDE68A" font-size="10.5" font-weight="700">條件 ②：解決用戶實際或情緒需求</text>
+                    <!-- Right: 1000 True Fans Formula -->
+                    <rect x="308" y="14" width="276" height="102" rx="5" fill="#0F2942" stroke="#D97706"/>
+                    <text x="446" y="35" text-anchor="middle" fill="#FBBF24" font-size="11" font-weight="800">🎯 凱文·凱利「1,000 鐵桿粉絲」定理</text>
+                    <text x="446" y="66" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="900">1,000 鐵粉 × 每人年付 $100 = $100,000</text>
+                    <text x="446" y="90" text-anchor="middle" fill="#A7F3D0" font-size="10" font-weight="700">破除「小眾＝沒市場」迷思（如手工皮具、芳療轉主業）</text>
+                    <text x="446" y="106" text-anchor="middle" fill="#94A3B8" font-size="9.5">重點不是大眾市場規模，而是精準連接願付費的一小群人</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：《把熱愛變成事業》第 2 章（引用 Kevin Kelly 鐵桿粉絲理論、Adam Grant《隱藏的潛能》）。</div>
+              </div>
+
+              <!-- Right: Core Insights -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card">
+                  <div class="bucket-title">🦸 重點摘要：超能力藏在你「與眾不同」的地方</div>
+                  <ul class="bucket-list">
+                    <li><strong>熱愛 ≠ 興趣，且靠「實踐驗證」而非僅靠測評</strong>：作者做過蓋洛普、PDP、MBTI，但真正找到方向是在行動中觀察自己做什麼事最輕鬆愉快、比別人好。</li>
+                    <li><strong>古怪特質就是超能力</strong>：引用凱文·凱利「孩提時代顯得古怪的東西可能讓你成年後變得偉大」（如作者曾被嘲笑寫「雞湯」，卻成高共鳴個人特色）。</li>
+                    <li><strong>性格技能大於天賦（《隱藏的潛能》）</strong>：決定潛力挖掘的是後天可訓練的<strong>性格技能（堅韌、合作、專注、自律）</strong>，而非天生智力。</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card gold-top">
+                  <div class="bucket-title">🎓 顧問亮點洞察：為什麼履歷越光鮮、越難踏出第一步？</div>
+                  <ul class="bucket-list">
+                    <li><strong>脫掉「孔乙己的長衫」</strong>：名校與大廠菁英包袱最重——害怕丟臉、無法承受初期 0 按讚的挫敗、總想「等準備完美再開始」（用更多學習逃避行動）。</li>
+                    <li><strong>刺破兩大不行動藉口</strong>：① 誤信「成功者都是天才或運氣好，我是普通人」；② 用「家庭責任（有伴侶小孩）」當作不敢追求熱愛、害怕失敗的遮羞布。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 5: 4 Discovery Toolkits & Action Plan -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>四大超能力探索工具類</th>
+                    <th>書中具體方法與框架</th>
+                    <th>解決的認知盲區</th>
+                    <th>本週／本月落地行動與成功指標 (KPI)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1. 自我探索法</strong></td>
+                    <td>價值觀澄清、<strong>心流分析</strong>、<strong>高光時刻記錄</strong>、小規模試驗迭代</td>
+                    <td>只憑空想找熱愛，忽略身體與情緒在真實行動中的正回饋。</td>
+                    <td><strong>本週：</strong>寫下人生中至少 <strong>5 個高光時刻</strong>（最有成就感、忘記時間），歸納出至少 1 個反覆出現的共同主題。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>2. 結構化框架</strong></td>
+                    <td><strong>IKIGAI 四象限</strong>（熱愛×擅長×世界需要×有報酬）、設計思維三階段</td>
+                    <td>避免陷入「自嗨式愛好」卻無法解決他人真實問題。</td>
+                    <td><strong>本週：</strong>完成 IKIGAI 四象限自評，找出至少 <strong>1 項落在三圈以上交集</strong>的候選方向，並通過「熱愛變現兩條件」書面檢核。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3. 他人回饋法</strong></td>
+                    <td>向親友/同事發放優勢問卷、請教專業教練與導師</td>
+                    <td>「當局者迷」——你覺得理所當然的輕鬆小事，往往是別人眼中的超能力。</td>
+                    <td><strong>本月：</strong>向至少 <strong>5 位熟悉你的人</strong>發問卷（「你覺得我最擅長什麼？」），收回 ≥5 份並找出高頻共性；把過去 3 個「古怪特質」轉成 1 句差異化自我介紹。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>4. 公開輸出加上性格測試</strong></td>
+                    <td>蓋洛普優勢、MBTI、DISC、霍蘭德 ＋ <strong>真實市場公開輸出驗證</strong></td>
+                    <td>停留在靜態測評報告，沒有接受真實陌生受眾的市場檢驗。</td>
+                    <td><strong>本月：</strong>針對候選領域做 1 次公開輸出（1 篇文章/短影音/分享），取得至少 <strong>3 條非親友的真實互動</strong>（留言、詢問、轉發）。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>💡 <strong>Takeaway 關鍵結論：</strong>停止用「繼續上課準備」逃避行動！你的超能力不在測驗卷裡，而在你公開輸出後收到的真實市場回饋裡。</span>
+              <span>章節對應：第 2 章《發現熱愛》</span>
+            </div>
+
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 05 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>找到可變現的熱愛必須同時滿足「真心熱愛擅長」與「解決他人問題」，並卸下精英完美主義包袱，在公開行動中驗證。<br>
+                <strong>② 補充說明：</strong>書中特別點名高學歷、好履歷的人最容易被「孔乙己的長衫」困住，因為習慣了高分正回饋，一旦初期寫文章沒人看就想放棄。記住凱文·凱利的 1,000 鐵桿粉絲理論：你不需要討好所有人，只要服務好 1,000 個同頻鐵粉就足夠富足。<br>
+                <strong>③ 下一頁轉場：</strong>當你初步鎖定熱愛方向後，如果身邊全是勸退你的打工同事怎麼辦？下一頁第 3 章教你如何換圈子借力破局。
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 5 of 16</span>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SLIDE 06: CHAPTER 3 - JOINING THE RIGHT PEER GROUP
+             ================================================================ -->
+        <section class="mck-slide" id="slide-06">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 06 / 16 ｜ CHAPTER 3: PEER GROUP &amp; EXTERNAL MOMENTUM</div>
+              <span class="badge-mck badge-blue">🟦 地基層：P2 加入圈子</span>
+            </div>
+            <h2 class="mck-action-title">
+              第 3 章 加入對的圈子：主動切換「<span class="hl-blue">五人平均值</span>」環境製造外部推力，以利他給予「<span class="hl-gold">先當群紅、再當網紅</span>」
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 6 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 6 ｜ COGNITIVE CEILING SHIFT &amp; COMMUNITY FLYWHEEL</span>
+                  <span class="exhibit-title">三次換圈子打開認知天花板 ×「先當群紅、再當網紅」三步曲</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <svg viewBox="0 0 600 245" width="100%">
+                    <rect width="600" height="245" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+                    <!-- Left: 3 Circle Shifts -->
+                    <text x="155" y="25" text-anchor="middle" fill="#051C2C" font-size="11.5" font-weight="800">🔄 作者三次換圈子打開人生天花板</text>
+                    <rect x="24" y="38" width="260" height="52" rx="5" fill="#E2E8F0"/>
+                    <text x="38" y="58" fill="#475569" font-size="11" font-weight="800">圈子 1：矽谷科技打工圈</text>
+                    <text x="38" y="76" fill="#64748B" font-size="9.5">10人有9人目標是升職跳槽拿大包裹（勸你別冒險）</text>
+
+                    <rect x="24" y="104" width="260" height="52" rx="5" fill="#E0F2FE" stroke="#0284C7"/>
+                    <text x="38" y="124" fill="#0369A1" font-size="11" font-weight="800">圈子 2：自媒體創作者集訓營</text>
+                    <text x="38" y="142" fill="#0F172A" font-size="9.5">作業要求＋同儕壓力逼出首篇病毒式爆款部落格</text>
+
+                    <rect x="24" y="170" width="260" height="56" rx="5" fill="#051C2C" stroke="#D97706" stroke-width="2"/>
+                    <text x="38" y="192" fill="#FBBF24" font-size="11" font-weight="800">圈子 3：小而美創業者／財富自由圈</text>
+                    <text x="38" y="210" fill="#FFFFFF" font-size="9.5">親眼看見身邊人做到「你可以的，我們都走過來了」</text>
+
+                    <!-- Right: Group Red to Net Red -->
+                    <rect x="308" y="18" width="274" height="210" rx="6" fill="#051C2C"/>
+                    <text x="445" y="42" text-anchor="middle" fill="#38BDF8" font-size="11.5" font-weight="800">🔥 混圈子實戰：先當「群紅」再當「網紅」</text>
+                    <rect x="326" y="56" width="238" height="42" rx="4" fill="#0F2942" stroke="#38BDF8"/>
+                    <text x="338" y="74" fill="#FFFFFF" font-size="10.5" font-weight="700">Step 1｜積極參與活動（絕不當潛水者）</text>
+                    <text x="338" y="89" fill="#94A3B8" font-size="9.5">高頻露面、認真交作業，讓所有人認識你</text>
+
+                    <rect x="326" y="108" width="238" height="42" rx="4" fill="#0F2942" stroke="#10B981"/>
+                    <text x="338" y="126" fill="#6EE7B7" font-size="10.5" font-weight="700">Step 2｜不計回報地「利他給予」</text>
+                    <text x="338" y="141" fill="#94A3B8" font-size="9.5">主動解答群友痛點，利他就是最好的個人資產</text>
+
+                    <rect x="326" y="160" width="238" height="52" rx="4" fill="#D97706"/>
+                    <text x="338" y="180" fill="#FFFFFF" font-size="10.5" font-weight="800">Step 3｜幫圈子發起人（群主）解決問題</text>
+                    <text x="338" y="197" fill="#FEF3C7" font-size="9.5">獲得群主背書與頂層資源推薦，直接收穫種子用戶</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：《把熱愛變成事業》第 3 章《加入圈子》。</div>
+              </div>
+
+              <!-- Right: Core Insights -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card">
+                  <div class="bucket-title">🧭 重點摘要：全新的人生可能性，大概率在你的圈子之外</div>
+                  <ul class="bucket-list">
+                    <li><strong>五人平均值定律</strong>：你的認知與收入水平是最常接觸 5 個人的平均值。找對圈子三切入點：① 從興趣找同好（潛在種子用戶）；② 想成為誰就加入誰；③ 主動篩選身邊環繞的人。</li>
+                    <li><strong>向內觀 × 向外看</strong>：單靠閉門自我反思（向內觀）看不清自己，必須透過看書、旅行、見人、換圈子（向外看），撞上外界反彈回來才看得清優勢。</li>
+                    <li><strong>突破「我沒資格分享」</strong>：心法上相信每個人的經歷組合都獨一無二；技法上多在不同場合展示自己，透過分享反向發掘優勢。</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card gold-top">
+                  <div class="bucket-title">💡 顧問亮點洞察：別靠意志力硬撐，要靠「環境外力」推自己</div>
+                  <ul class="bucket-list">
+                    <li><strong>把身邊人反對當客觀評估是最大誤區</strong>：打工圈勸你別創業不是惡意，而是他們沒走過；換個已走過的圈子，同一個決定的「風險評分」完全不同。</li>
+                    <li><strong>混進高端圈 ≠ 向上社交</strong>：提供不了匹配價值，加再多大咖微信也只是透明人。真正有效的是在群裡持續輸出、幫群主解決問題，先成為「群紅」。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 6: Circle Audit & Action Plan -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>比較維度</th>
+                    <th>❌ 原生打壓型圈子（舒適區陷阱）</th>
+                    <th>✅ 目標賦能型圈子（外部推力場）</th>
+                    <th>本週／本月落地行動與成功指標 (KPI)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>對新嘗試的反應</strong></td>
+                    <td>「現在經濟不好別瞎折騰」「做自媒體太飽和了你不可能成功」</td>
+                    <td>「你可以的，我們都是這樣走過來的！先發第一篇試試看」</td>
+                    <td><strong>本週：</strong>列出目前最常互動的 5 人（或 1–2 個主要社群），寫下他們對你離職/副業的真實反應，完成<strong>「打壓型 vs 賦能型」標記表</strong>。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>行動驅動機制</strong></td>
+                    <td>靠個人脆弱的意志力孤軍奮戰，極易因無回饋而放棄。</td>
+                    <td>靠<strong>作業要求＋同儕壓力</strong>推動（如作者被集訓營逼出首篇爆款）。</td>
+                    <td><strong>本月內：</strong>加入至少 <strong>2 個目標方向線上社群</strong>（付費或免費皆可），並在群內發布至少 1 次結構化自我介紹貼文。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>社交價值交換</strong></td>
+                    <td>潛水圍觀、索取免費資源，或誤以為合照換名片就是人脈。</td>
+                    <td><strong>利他給予先行</strong>：主動回答群友問題、分擔群主運營痛點。</td>
+                    <td><strong>入群頭 2 週：</strong>主動回答至少 <strong>3 個提問或提供 3 次無償實質幫助</strong>，取得 ≥1 位群友正向感謝或私訊；本月發布 1 篇 500–800 字獨特心得文。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>💡 <strong>Takeaway 關鍵結論：</strong>改變是被外部環境推出來的，不是在舊圈子裡「想通」的——本月立即加入 2 個新圈子並無償幫助 3 個人！</span>
+              <span>章節對應：第 3 章《加入圈子》</span>
+            </div>
+
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 06 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>要突破認知局限與行動惰性，最快的方法是主動更換社交圈，並在圈內透過無償利他「先成為群紅，再成為網紅」。<br>
+                <strong>② 補充說明：</strong>作者第一篇爆紅的英文資料科學部落格，並不是自己在家想通寫出來的，而是報名寫作集訓營後被「作業期限＋同儕壓力」逼出來的。請學員入群後切忌當潛水客，頭兩週務必完成 3 次高品質利他回覆。<br>
+                <strong>③ 下一頁轉場：</strong>地基層（風險、熱愛、圈子）搭建完畢後，我們正式進入第二階段「驗證層」——第 4 章如何向世界發聲、建立個人品牌與私域資產。
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 6 of 16</span>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SLIDE 07: CHAPTER 4 - PERSONAL BRAND & PRIVATE DOMAIN
+             ================================================================ -->
+        <section class="mck-slide" id="slide-07">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 07 / 16 ｜ CHAPTER 4: PERSONAL BRAND &amp; PRIVATE DOMAIN ASSET</div>
+              <span class="badge-mck badge-emerald">🟩 驗證層：P3 個人品牌</span>
+            </div>
+            <h2 class="mck-action-title">
+              第 4 章 建立個人品牌：「<span class="hl-gold">專業是流量的敵人</span>」，用 6 歲聽得懂的語言輸出，並將公域虛榮指標沉澱為<span class="hl-blue">私域資產</span>
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 7 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 7 ｜ CONTENT PYRAMID &amp; PRIVATE DOMAIN FUNNEL</span>
+                  <span class="exhibit-title">內容傳播三層次金字塔 × 公域流量沉澱私域資產 5 步驟</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <svg viewBox="0 0 600 250" width="100%">
+                    <rect width="600" height="250" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+                    <!-- Left: Content Pyramid -->
+                    <text x="150" y="24" text-anchor="middle" fill="#051C2C" font-size="11.5" font-weight="800">📐 內容傳播三層次與爆款三特質</text>
+                    <polygon points="150,40 235,95 65,95" fill="#D97706"/>
+                    <text x="150" y="76" text-anchor="middle" fill="#FFFFFF" font-size="10.5" font-weight="800">3. 娛樂 (最廣/最難)</text>
+
+                    <polygon points="62,100 238,100 265,155 35,155" fill="#0066CC"/>
+                    <text x="150" y="125" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="800">2. 啟發（真實故事與觀點）</text>
+                    <text x="150" y="142" text-anchor="middle" fill="#E0F2FE" font-size="9.5">轉化率比純蹭熱點高出 10 倍！</text>
+
+                    <polygon points="32,160 268,160 290,215 10,215" fill="#051C2C"/>
+                    <text x="150" y="185" text-anchor="middle" fill="#38BDF8" font-size="11" font-weight="800">1. 教學（免費價值建立基礎）</text>
+                    <text x="150" y="202" text-anchor="middle" fill="#CBD5E1" font-size="9.5">⚠️ 切忌掉書袋：用 6 歲小孩聽懂的話講</text>
+                    <text x="150" y="236" text-anchor="middle" fill="#0F172A" font-size="10" font-weight="700">爆款三要素：共鳴 × 稀缺 × 價值（十年後仍有用）</text>
+
+                    <!-- Divider -->
+                    <line x1="305" y1="18" x2="305" y2="232" stroke="#CBD5E1" stroke-dasharray="4,4"/>
+
+                    <!-- Right: 5-Step Private Domain Funnel -->
+                    <text x="452" y="24" text-anchor="middle" fill="#059669" font-size="11.5" font-weight="800">🛡️ 經營私域資產 5 步驟（抗演算法黑盒）</text>
+                    <rect x="325" y="38" width="254" height="32" rx="4" fill="#E0F2FE" stroke="#0284C7"/>
+                    <text x="452" y="58" text-anchor="middle" fill="#0369A1" font-size="10.5" font-weight="800">① 引導加好友（簡介固定導流＋領取福利誘因）</text>
+
+                    <rect x="338" y="78" width="228" height="32" rx="4" fill="#D1FAE5" stroke="#059669"/>
+                    <text x="452" y="98" text-anchor="middle" fill="#065F46" font-size="10.5" font-weight="800">② 貼標籤分層管理（高活躍／已付費／潛在客）</text>
+
+                    <rect x="351" y="118" width="202" height="32" rx="4" fill="#D1FAE5" stroke="#059669"/>
+                    <text x="452" y="138" text-anchor="middle" fill="#065F46" font-size="10.5" font-weight="800">③ 私域持續輸出（朋友圈/LINE 穩定高價值觸達）</text>
+
+                    <rect x="364" y="158" width="176" height="32" rx="4" fill="#FEF3C7" stroke="#D97706"/>
+                    <text x="452" y="178" text-anchor="middle" fill="#92400E" font-size="10.5" font-weight="800">④ 建立高黏著粉絲群（社群互動與信任升溫）</text>
+
+                    <rect x="377" y="198" width="150" height="34" rx="4" fill="#051C2C"/>
+                    <text x="452" y="219" text-anchor="middle" fill="#FDE68A" font-size="10.5" font-weight="800">⑤ 精細化一對一運營成交</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：《把熱愛變成事業》第 4 章《個人品牌》。</div>
+              </div>
+
+              <!-- Right: Core Insights -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card">
+                  <div class="bucket-title">📢 重點摘要：打造個人品牌四步法與內容底層邏輯</div>
+                  <ul class="bucket-list">
+                    <li><strong>職場考績的教訓</strong>：「光努力做事而不被看見，辛勤付出很難被認可。」個人品牌是他人心中的獨特印象與對外承諾。</li>
+                    <li><strong>品牌建設 4 步驟</strong>：① 明確定位（喜歡×擅長×能賺錢，<strong>不必精確才開始</strong>）；② 系統性內容建設（一魚多吃跨平台分發）；③ 建立持續影響力（細分深耕＋獨特觀點）；④ 確保長期一致性。</li>
+                    <li><strong>帶個人故事與觀點的轉化率高 10 倍</strong>：單純蹭熱點轉化率極低；分享真實踩坑經歷與鮮明觀點才能建立深層連結。</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card gold-top">
+                  <div class="bucket-title">💡 顧問亮點洞察：打破專家與新人的兩大迷思</div>
+                  <ul class="bucket-list">
+                    <li><strong>「專業是流量的敵人」</strong>：工程師、顧問、律師最愛講《DSST 考試報名流程》這類生硬乾貨，結果無人問津；改為用戶視角的《留學生必備 4 大考試》並用 <strong>6 歲小孩聽得懂的話</strong>講，流量立刻爆發。</li>
+                    <li><strong>「公域粉絲量只是給平台打工」</strong>：演算法隨時會變，只有導流進私域（可隨時免費反覆觸達的名單）才是真正屬於你的資產。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 7: Content Topic Matrix & Taiwan Localization -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>三大內容選題配置</th>
+                    <th>核心目的與寫作重點</th>
+                    <th>大陸微信生態 vs. 台灣市場載體轉譯（顧問延伸）</th>
+                    <th>本週／本月落地行動與成功指標 (KPI)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1. 流量選題（破圈）</strong></td>
+                    <td>從大眾關心的痛點切入，通俗易懂，把陌生人吸引進來（如《留學生必備4大考試》）。</td>
+                    <td>小紅書／視頻號 ➔ 台灣對應：<strong>IG Reels ／ Threads ／ YouTube Shorts</strong></td>
+                    <td><strong>本週：</strong>用定位公式（喜歡+擅長+能賺錢）各列 5 項圈出 2–3 個交集；發布<strong>第 1 篇包含第一人稱真實經歷與觀點</strong>的內容。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>2. 專業選題（立威）</strong></td>
+                    <td>展示實戰方法論與案例成果，證明你比學員領先 3–4 級，建立權威感。</td>
+                    <td>微信公眾號長文 ➔ 台灣對應：<strong>Facebook 長文 ／ 電子報 (Substack) ／ 個人網站簡報</strong></td>
+                    <td><strong>本月：</strong>完成目標受眾拆解表（特徵/興趣/目標/痛點各 2–3 條）；排定未來 4 週行事曆（流量/專業/IP 選題各 ≥2 條，共 ≥6 條）。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3. IP 選題（信任）</strong></td>
+                    <td>分享個人故事、價值觀、轉型心路歷程，把讀者變成鐵粉並導流私域。</td>
+                    <td>個人微信號＋朋友圈 ➔ 台灣對應：<strong>LINE 官方帳號 (LINE OA) ＋ FB 私密社團 ／ IG 廣播專區</strong></td>
+                    <td><strong>本月：</strong>在簡介放上私域領取福利誘因，開始追蹤「每月新增私域好友數」；對既有至少 <strong>30 位私域聯絡人完成分層貼標籤</strong>。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>💡 <strong>Takeaway 關鍵結論：</strong>別再等「想好完美定位」才發文！本週就發出一篇帶你個人真實故事的文章，並在簡介掛上私域導流鉤子。</span>
+              <span>章節對應：第 4 章《個人品牌》</span>
+            </div>
+
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 07 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>個人品牌的關鍵不在文采或精確定位，而在持續輸出帶有個人故事與觀點的通俗內容，並將公域流量沉澱為私域資產。<br>
+                <strong>② 補充說明：</strong>作者 2020 年剛開始做自媒體時完全沒有明確定位，只是分享矽谷見聞與讀書心得，卻在邊做邊調中摸清方向。請專業背景學員特別謹記「專業是流量的敵人」，把艱深術語翻譯成大白話，並同步啟動私域貼標分層。<br>
+                <strong>③ 下一頁轉場：</strong>當你開始累積品牌信任後，該賣什麼產品才能告別「用愛發電」？下一頁進入第 5 章（上）打造產品與商業模式演進。
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 7 of 16</span>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SLIDE 08: CHAPTER 5 (PART A) - PRODUCT & BUSINESS MODEL ITERATION
+             ================================================================ -->
+        <section class="mck-slide" id="slide-08">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 08 / 16 ｜ CHAPTER 5 (PART A): BUSINESS MODEL &amp; KNOWLEDGE PAID</div>
+              <span class="badge-mck badge-emerald">🟩 驗證層：P4 打造產品 (上)</span>
+            </div>
+            <h2 class="mck-action-title">
+              第 5 章（上）打造產品與商業迭代：無大流量者首選「<span class="hl-gold">知識付費</span>」，以「<span class="hl-blue">比學員領先 3–4 級</span>」切入真實剛需
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 8 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 8 ｜ 6-STAGE BUSINESS EVOLUTION &amp; SKILL LEVEL 3-4 RULE</span>
+                  <span class="exhibit-title">作者商業模式六階段迭代路徑 ×「技能 3–4 級教 0–2 級小白」差位法則</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <svg viewBox="0 0 600 245" width="100%">
+                    <rect width="600" height="245" rx="6" fill="#051C2C"/>
+                    <!-- Top: 6 Stages Flow -->
+                    <text x="300" y="24" text-anchor="middle" fill="#FBBF24" font-size="11.5" font-weight="800">📈 凱莉彭超級個體商業模式六階段真實迭代路徑</text>
+
+                    <rect x="14" y="38" width="88" height="74" rx="4" fill="#1E293B" stroke="#64748B"/>
+                    <text x="58" y="56" text-anchor="middle" fill="#94A3B8" font-size="9.5" font-weight="800">Stage 1 踩坑</text>
+                    <text x="58" y="72" text-anchor="middle" fill="#FFFFFF" font-size="9.5">低價年費社群</text>
+                    <text x="58" y="86" text-anchor="middle" fill="#CBD5E1" font-size="8.5">商業訪談變現</text>
+                    <text x="58" y="102" text-anchor="middle" fill="#F87171" font-size="8.5">心累且難規模化</text>
+
+                    <rect x="110" y="38" width="92" height="74" rx="4" fill="#0F2942" stroke="#38BDF8"/>
+                    <text x="156" y="56" text-anchor="middle" fill="#38BDF8" font-size="9.5" font-weight="800">Stage 2 驗證</text>
+                    <text x="156" y="72" text-anchor="middle" fill="#FFFFFF" font-size="9.5">499元1對1諮詢</text>
+                    <text x="156" y="86" text-anchor="middle" fill="#CBD5E1" font-size="8.5">推出3000-4000元</text>
+                    <text x="156" y="102" text-anchor="middle" fill="#38BDF8" font-size="8.5">內容力變現營</text>
+
+                    <rect x="210" y="38" width="88" height="74" rx="4" fill="#0F2942" stroke="#38BDF8"/>
+                    <text x="254" y="56" text-anchor="middle" fill="#38BDF8" font-size="9.5" font-weight="800">Stage 3 升級</text>
+                    <text x="254" y="72" text-anchor="middle" fill="#FFFFFF" font-size="9.5">精簡理論課程</text>
+                    <text x="254" y="86" text-anchor="middle" fill="#CBD5E1" font-size="8.5">大幅增加實戰</text>
+                    <text x="254" y="102" text-anchor="middle" fill="#38BDF8" font-size="8.5">與陪跑交付力</text>
+
+                    <rect x="306" y="38" width="90" height="74" rx="4" fill="#1E293B" stroke="#F59E0B"/>
+                    <text x="351" y="56" text-anchor="middle" fill="#FBBF24" font-size="9.5" font-weight="800">Stage 4 風口</text>
+                    <text x="351" y="72" text-anchor="middle" fill="#FFFFFF" font-size="9.5">AI創作入門課</text>
+                    <text x="351" y="86" text-anchor="middle" fill="#FDE68A" font-size="8.5">單月營收七位數</text>
+                    <text x="351" y="102" text-anchor="middle" fill="#F87171" font-size="8.5">但淪為風口工具人</text>
+
+                    <rect x="404" y="38" width="88" height="74" rx="4" fill="#0F2942" stroke="#10B981"/>
+                    <text x="448" y="56" text-anchor="middle" fill="#34D399" font-size="9.5" font-weight="800">Stage 5 孵化</text>
+                    <text x="448" y="72" text-anchor="middle" fill="#FFFFFF" font-size="9.5">內部成員技能</text>
+                    <text x="448" y="86" text-anchor="middle" fill="#CBD5E1" font-size="8.5">孵化剪輯變現營</text>
+                    <text x="448" y="102" text-anchor="middle" fill="#34D399" font-size="8.5">實現多產品裂變</text>
+
+                    <rect x="500" y="38" width="86" height="74" rx="4" fill="#D97706"/>
+                    <text x="543" y="56" text-anchor="middle" fill="#FFFFFF" font-size="9.5" font-weight="800">Stage 6 深連</text>
+                    <text x="543" y="72" text-anchor="middle" fill="#FEF3C7" font-size="9.5">果斷下架風口課</text>
+                    <text x="543" y="86" text-anchor="middle" fill="#FFFFFF" font-size="8.5">轉向高門檻社群</text>
+                    <text x="543" y="102" text-anchor="middle" fill="#FFFFFF" font-size="9" font-weight="800">「勇士合夥人」</text>
+
+                    <!-- Bottom: Skill Scale 0-10 -->
+                    <rect x="14" y="126" width="572" height="104" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)"/>
+                    <text x="300" y="148" text-anchor="middle" fill="#38BDF8" font-size="11" font-weight="800">🪜 為什麼不必等成為「10級頂級專家」才開始教人？（技能差位服務模型）</text>
+                    <line x1="50" y1="185" x2="550" y2="185" stroke="#64748B" stroke-width="4"/>
+                    <!-- 0-2 Novice -->
+                    <rect x="50" y="170" width="130" height="30" rx="4" fill="#0284C7"/>
+                    <text x="115" y="189" text-anchor="middle" fill="#FFFFFF" font-size="10.5" font-weight="800">Lv 0–2 新手小白</text>
+                    <!-- 3-4 Practitioner -->
+                    <rect x="220" y="166" width="150" height="38" rx="4" fill="#10B981"/>
+                    <text x="295" y="184" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="900">★ Lv 3–4 實踐者（你）</text>
+                    <text x="295" y="198" text-anchor="middle" fill="#051C2C" font-size="9" font-weight="800">最懂小白剛走過的痛點！</text>
+                    <!-- 9-10 Guru -->
+                    <rect x="430" y="170" width="120" height="30" rx="4" fill="#475569"/>
+                    <text x="490" y="189" text-anchor="middle" fill="#CBD5E1" font-size="10.5" font-weight="700">Lv 9–10 頂級大師</text>
+                    <text x="300" y="220" text-anchor="middle" fill="#FDE68A" font-size="10">大師離新手太遠容易產生「知識詛咒」；Lv 3–4 幫助 Lv 0–2 是最精準的第一代產品切入點</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：《把熱愛變成事業》第 5 章《打造產品》（上）。</div>
+              </div>
+
+              <!-- Right: Core Insights -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card">
+                  <div class="bucket-title">💎 重點摘要：為什麼起步階段最適合做「知識付費」？</div>
+                  <ul class="bucket-list">
+                    <li><strong>三大核心優勢</strong>：① <strong>不需要大流量也能賺錢</strong>（幾百個精準私域即可成交高客單）；② <strong>自己掌握主動權</strong>（不必看品牌爸爸臉色等商單）；③ <strong>自己掌握定價權</strong>（依交付價值定價，不被甲方壓價）。</li>
+                    <li><strong>幫助比自己晚幾步的人</strong>：如果一項技能分 10 級，你只要到 <strong>3、4 級就能教 0～2 級的人</strong>；切忌在家「憋大招」，要在公眾視野下邊做邊打磨。</li>
+                    <li><strong>警惕短命風口陷阱</strong>：作者曾靠 AI 入門課月入七位數，但意識到追風口會淪為沒有積累的「工具人」，最終主動下架、轉向深度社群。</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card gold-top">
+                  <div class="bucket-title">💡 顧問亮點洞察：選對變現賽道比努力更重要</div>
+                  <ul class="bucket-list">
+                    <li><strong>帶貨與廣告商單是「大流量博主的遊戲」</strong>：小博主接商單不僅單價極低，還會消耗粉絲信任；知識付費／顧問諮詢則是把「專業信任」直接變成高毛利現金流。</li>
+                    <li><strong>從 499 元一對一諮詢長出 4,000 元訓練營</strong>：作者的爆款「內容力變現營」並非憑空想像，而是先做大量 499 元一對一諮詢，摸透共性痛點後才標準化為課程。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 8: 3 Monetization Models Comparison -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>自媒體三大變現方式</th>
+                    <th>流量門檻要求</th>
+                    <th>定價權與毛利率</th>
+                    <th>業務主動權與可持續性</th>
+                    <th>顧問配置建議与本月落地行動</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1. 知識付費／諮詢陪跑（★首選）</strong><br><span style="font-size:0.75rem; color:#059669;">一對一諮詢、訓練營、高階社群</span></td>
+                    <td><strong>極低</strong>（1,000 鐵粉甚至數百私域即可啟動）</td>
+                    <td><strong>極高</strong>（自主定價，邊際交付成本低，毛利＞80%）</td>
+                    <td><strong>完全自主</strong>：隨時可發起招生，隨客戶回饋迭代升級。</td>
+                    <td rowspan="3"><strong>本月行動 1：</strong>盤點目前變現方式，寫出一頁<strong>「主力／輔助變現方式配置表」</strong>，砍掉低效益散單，將 80% 資源集中於知識付費／顧問服務。<br><strong>本月行動 2：</strong>列出自己處於 <strong>Lv 3–4 的 3 項實戰技能</strong>，鎖定 Lv 0–2 小白最痛的 1 個具體問題作為第一代產品原型。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>2. 廣告商單（品牌合作）</strong></td>
+                    <td><strong>高</strong>（需數萬至數十萬公域粉絲與高互動率）</td>
+                    <td>中低（受制於甲方預算與比價，易被壓價）</td>
+                    <td><strong>被動看天吃飯</strong>：淡旺季波動大，接多傷粉絲信任。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3. 電商帶貨（分潤/選品）</strong></td>
+                    <td><strong>極高</strong>（需龐大公域流量與供應鏈議價力）</td>
+                    <td>低（抽成比例固定，退貨與客服成本高）</td>
+                    <td>大流量博主的遊戲，個人起步極難跑通正現金流。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>💡 <strong>Takeaway 關鍵結論：</strong>缺乏大流量時，忘掉廣告商單與帶貨！你已經擁有的 Lv 3–4 經驗，就是幫助 Lv 0–2 新手最好的高毛利知識產品。</span>
+              <span>章節對應：第 5 章《打造產品》（上）</span>
+            </div>
+
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 08 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>無大流量的個人創業者應首選「知識付費與諮詢服務」，並以比學員高 3–4 級的實戰經驗切入市場。<br>
+                <strong>② 補充說明：</strong>作者親身走過六個階段：從低價年費群踩坑，到用 499 元一對一諮詢摸清需求、推出三四千元的訓練營，再到月入百萬卻主動下架 AI 風口課、轉向高門檻「勇士合夥人」。這證明產品必須掌握自主定價權與長期複利。<br>
+                <strong>③ 下一頁轉場：</strong>決定做知識產品後，怎麼確保做出來一定有人買？下一頁第 5 章（下）拆解最具實戰價值的「海報 MVP 測試」與《老媽測試》。
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 8 of 16</span>
+          </div>
+        </section>
+
+
+        <!-- ================================================================
+             SLIDE 09: CHAPTER 5 (PART B) - MVP POSTER TEST & THE MOM TEST
+             ================================================================ -->
+        <section class="mck-slide" id="slide-09">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 09 / 16 ｜ CHAPTER 5 (PART B): LEAN MVP &amp; THE MOM TEST</div>
+              <span class="badge-mck badge-emerald">🟩 驗證層：P4 打造產品 (下)</span>
+            </div>
+            <h2 class="mck-action-title">
+              第 5 章（下）MVP 驗證與老媽測試：<span class="hl-gold">先賣海報收真金白銀</span>再做產品，起步階段以「<span class="hl-blue">一對一付費諮詢</span>」取代錄播課
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 9 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 9 ｜ WHY 3-CIRCLE FILTER &amp; POSTER MVP VS. RECORDED COURSE</span>
+                  <span class="exhibit-title">產品立項三問（Why This/Now/You）× 兩種產品開發路徑損益對比</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <svg viewBox="0 0 600 245" width="100%">
+                    <rect width="600" height="245" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+                    <!-- Left: Why This / Why Now / Why You -->
+                    <text x="145" y="24" text-anchor="middle" fill="#051C2C" font-size="11.5" font-weight="800">🎯 產品立項必答三問 (3 Whys)</text>
+                    <circle cx="110" cy="95" r="52" fill="rgba(0,102,204,0.18)" stroke="#0066CC" stroke-width="2"/>
+                    <text x="92" y="88" text-anchor="middle" fill="#051C2C" font-size="10.5" font-weight="800">Why This</text>
+                    <text x="92" y="103" text-anchor="middle" fill="#0369A1" font-size="9">痛點真實？人群夠大？</text>
+
+                    <circle cx="180" cy="95" r="52" fill="rgba(217,119,6,0.18)" stroke="#D97706" stroke-width="2"/>
+                    <text x="198" y="88" text-anchor="middle" fill="#051C2C" font-size="10.5" font-weight="800">Why Now</text>
+                    <text x="198" y="103" text-anchor="middle" fill="#B45309" font-size="9">處於上行/紅利期？</text>
+
+                    <circle cx="145" cy="155" r="52" fill="rgba(5,150,105,0.18)" stroke="#059669" stroke-width="2"/>
+                    <text x="145" y="168" text-anchor="middle" fill="#051C2C" font-size="10.5" font-weight="800">Why You</text>
+                    <text x="145" y="183" text-anchor="middle" fill="#065F46" font-size="9">你的專長/熱情/資源？</text>
+                    <text x="145" y="228" text-anchor="middle" fill="#DC2626" font-size="9.5" font-weight="700">⚠️ 任一題答不出具體事實，立即停工改做訪談！</text>
+
+                    <!-- Divider -->
+                    <line x1="285" y1="18" x2="285" y2="230" stroke="#CBD5E1" stroke-dasharray="4,4"/>
+
+                    <!-- Right: Poster MVP vs Blind Recording -->
+                    <text x="442" y="24" text-anchor="middle" fill="#051C2C" font-size="11.5" font-weight="800">⚡ 閉門錄課 vs. 海報預售 MVP 實證對比</text>
+                    <rect x="302" y="38" width="280" height="84" rx="5" fill="#FEF2F2" stroke="#FCA5A5"/>
+                    <text x="314" y="58" fill="#991B1B" font-size="10.5" font-weight="800">❌ 傳統反例：閉門造車錄《時間管理課》</text>
+                    <text x="314" y="76" fill="#7F1D1D" font-size="9.5">• 花數月精心打磨錄完 30 節完整課程才上架</text>
+                    <text x="314" y="92" fill="#7F1D1D" font-size="9.5">• 結果：只賣出不到 10 份，數月心血沉沒歸零</text>
+                    <text x="314" y="108" fill="#DC2626" font-size="9.5" font-weight="700">• 根因：在不了解真實需求時，做得越多錯得越多</text>
+
+                    <rect x="302" y="134" width="280" height="94" rx="5" fill="#051C2C" stroke="#10B981" stroke-width="2"/>
+                    <text x="314" y="154" fill="#34D399" font-size="10.5" font-weight="800">✅ 精益正例：凱莉彭「海報預售 MVP 法」</text>
+                    <text x="314" y="172" fill="#FFFFFF" font-size="9.5">• 課還沒做，先做 1 張課程海報在朋友圈/社群開賣</text>
+                    <text x="314" y="188" fill="#A7F3D0" font-size="9.5">• 結果：30 個名額幾天內真金白銀售罄！</text>
+                    <text x="314" y="206" fill="#FDE68A" font-size="9.5" font-weight="700">• 邊交付邊收集回饋迭代，零沉沒成本驗證 PMF</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：《把熱愛變成事業》第 5 章（精益創業 MVP、老媽測試 The Mom Test）。</div>
+              </div>
+
+              <!-- Right: Core Insights -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card">
+                  <div class="bucket-title">🧪 重點摘要：兩種最小可行產品 (MVP) 驗證法</div>
+                  <ul class="bucket-list">
+                    <li><strong>做法 ①｜海報預售測試</strong>：先做一張包含痛點、大綱、價格的海報，在私域、社群、直播間直接測試收款；收到真金白銀才開始製作課程。</li>
+                    <li><strong>做法 ②｜起步先做「一對一付費諮詢／私教」而非課程</strong>：① 一對一能快速驗證交付力並收集共性痛點；② 不需大流量湊開班人數；③ 客製化單價更高、時間自由、現金流即時（避開課程第二期續招斷崖）。</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card gold-top">
+                  <div class="bucket-title">🕵️ 顧問亮點洞察：為什麼親友粉絲說「一定買」全是陷阱？</div>
+                  <ul class="bucket-list">
+                    <li><strong>《老媽測試》過濾禮貌性讚美</strong>：當你問朋友「我想開這門課你會不會想學？」，對方出於禮貌一定說好，但真開賣時卻無人掏錢。</li>
+                    <li><strong>只問「過去實際花錢行為」</strong>：必須追問「你上次為了解決這個問題，是什麼時候？花了多少錢？買了什麼？」，沒花過錢解決的痛點就是假痛點。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 9: The Mom Test 6 Rules & Action Plan -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>《老媽測試》六大黃金法則</th>
+                    <th>❌ 錯誤調研提問（得到失真讚美）</th>
+                    <th>✅ 正確調研追問（挖出真實付費剛需）</th>
+                    <th>本週／本月落地行動與成功指標 (KPI)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1. 不提自己的創業想法<br>2. 問過去事實而非未來猜測</strong></td>
+                    <td>「我想做一個 AI 簡報課，如果推出你覺得怎麼樣？未來會買嗎？」</td>
+                    <td>「你上個月做簡報最卡關是哪一次？當時你用什麼方法或買什麼工具解決？」</td>
+                    <td><strong>本週：</strong>用 Why this/now/you 各寫 150 字內回答，每題必須有<strong>至少 1 個具體事實或數字</strong>支撐。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3. 多聽少說（80%傾聽）<br>4. 過濾禮貌性讚美</strong></td>
+                    <td>聽到對方說「你這個點子超棒！等你做出來我一定支持」就當真。</td>
+                    <td>直接忽略讚美，追問：「你上次為類似問題實際掏錢是什麼時候？花了多少？」</td>
+                    <td><strong>本月：</strong>找 <strong>10–15 位目標客群</strong>依老媽測試一對一訪談（全程不提自己構想），歸納出 <strong>≥3 個重複出現的共性痛點</strong>。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>5. 警惕「我覺得我會…」<br>6. 挖掘要求背後的動機</strong></td>
+                    <td>客戶說「如果你加某功能我就買」，就照單全收拼命加功能。</td>
+                    <td>追問：「為什麼你需要這個功能？沒有它時你現在怎麼處理？」並直接拿海報收預購金。</td>
+                    <td><strong>本月：</strong>發 1 張海報實測預購（設最低 <strong>5–10 份實際付款門檻</strong>達標才開發）；或先接 <strong>3–5 位一對一付費諮詢</strong>客戶。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>💡 <strong>Takeaway 關鍵結論：</strong>問卷裡的「想學」一文不值，轉帳紀錄裡的「已付款」才是唯一真實的需求信號！先賣海報與 1對1 諮詢。</span>
+              <span>章節對應：第 5 章《打造產品》（下）</span>
+            </div>
+
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 09 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>驗證產品需求必須通過《老媽測試》並採用「海報預售 MVP」或「一對一付費諮詢」，絕不閉門錄課。<br>
+                <strong>② 補充說明：</strong>書中舉例有人花幾個月錄完 30 節時間管理課，結果只賣出不到 10 份；反觀作者推「內容力變現營」時，連課件都還沒做，只發了一張海報測試，30 個名額幾天內付費秒殺。請學員本月務必先接 3–5 位一對一付費諮詢或發海報收預購金。<br>
+                <strong>③ 下一頁轉場：</strong>當單一產品與一對一諮詢跑通後，如何突破時間上限、邁向年入百萬至五百萬？下一頁進入第 6 章搭建產品體系。
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 9 of 16</span>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SLIDE 10: CHAPTER 6 - PRODUCT LADDER & SCALING REVENUE
+             ================================================================ -->
+        <section class="mck-slide" id="slide-10">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 10 / 16 ｜ CHAPTER 6: PRODUCT LADDER &amp; 4 REVENUE STAGES</div>
+              <span class="badge-mck badge-gold">🟨 放大層：搭建產品體系</span>
+            </div>
+            <h2 class="mck-action-title">
+              第 6 章 搭建產品體系放大規模：依循<span class="hl-blue">超級個體四階段升級路徑</span>，避開「起步做完整階梯」與「<span class="hl-gold">199 元超低價走量</span>」四大陷阱
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 10 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 10 ｜ PRODUCT LADDER (LTV +30%~50%) &amp; 4 INCOME STAGES</span>
+                  <span class="exhibit-title">四層產品階梯模型 × 超級個體年收入四階段躍遷路徑</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <svg viewBox="0 0 600 250" width="100%">
+                    <rect width="600" height="250" rx="6" fill="#051C2C"/>
+                    <!-- Left: Product Ladder Staircase -->
+                    <text x="150" y="24" text-anchor="middle" fill="#38BDF8" font-size="11" font-weight="800">🪜 產品階梯（提升客戶 LTV 30%–50%）</text>
+                    <!-- Step 1 -->
+                    <rect x="20" y="185" width="95" height="42" rx="4" fill="#1E293B" stroke="#38BDF8"/>
+                    <text x="67" y="203" text-anchor="middle" fill="#FFFFFF" font-size="9.5" font-weight="700">① 免費福利資料</text>
+                    <text x="67" y="218" text-anchor="middle" fill="#94A3B8" font-size="8.5">公域導流私域鉤子</text>
+                    <!-- Step 2 -->
+                    <rect x="85" y="136" width="105" height="42" rx="4" fill="#0F2942" stroke="#38BDF8"/>
+                    <text x="137" y="154" text-anchor="middle" fill="#38BDF8" font-size="9.5" font-weight="700">② 百元內體驗課</text>
+                    <text x="137" y="169" text-anchor="middle" fill="#CBD5E1" font-size="8.5">3天體驗營破冰篩客</text>
+                    <!-- Step 3 -->
+                    <rect x="150" y="87" width="110" height="42" rx="4" fill="#0066CC"/>
+                    <text x="205" y="105" text-anchor="middle" fill="#FFFFFF" font-size="9.5" font-weight="800">③ 千元級訓練營</text>
+                    <text x="205" y="120" text-anchor="middle" fill="#E0F2FE" font-size="8.5">標準化規模交付主力</text>
+                    <!-- Step 4 -->
+                    <rect x="205" y="38" width="115" height="42" rx="4" fill="#D97706"/>
+                    <text x="262" y="56" text-anchor="middle" fill="#FFFFFF" font-size="9.5" font-weight="800">④ 萬元私教/合夥人</text>
+                    <text x="262" y="71" text-anchor="middle" fill="#FEF3C7" font-size="8.5">高客單深度陪跑利潤池</text>
+
+                    <!-- Right: 4 Revenue Stages -->
+                    <rect x="334" y="16" width="252" height="218" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)"/>
+                    <text x="460" y="36" text-anchor="middle" fill="#FBBF24" font-size="11" font-weight="800">🚀 超級個體收入四階段模型</text>
+
+                    <rect x="346" y="46" width="228" height="38" rx="4" fill="#1E293B"/>
+                    <text x="356" y="62" fill="#38BDF8" font-size="10" font-weight="800">階段 1｜月入 1–5 萬元</text>
+                    <text x="356" y="76" fill="#CBD5E1" font-size="9">靠1對1諮詢/定制（⚠️用時間換錢，不可久留）</text>
+
+                    <rect x="346" y="90" width="228" height="38" rx="4" fill="#0F2942" stroke="#0284C7"/>
+                    <text x="356" y="106" fill="#6EE7B7" font-size="10" font-weight="800">階段 2｜年入 50 萬–100 萬元</text>
+                    <text x="356" y="120" fill="#CBD5E1" font-size="9">規模化交付（訓練營）＋公域穩定獲客＋小協作</text>
+
+                    <rect x="346" y="134" width="228" height="38" rx="4" fill="#0F2942" stroke="#D97706"/>
+                    <text x="356" y="150" fill="#FDE68A" font-size="10" font-weight="800">階段 3｜年入 100 萬–500 萬元</text>
+                    <text x="356" y="164" fill="#CBD5E1" font-size="9">前端5000元訓練營＋後端3萬元陪跑升階體系</text>
+
+                    <rect x="346" y="178" width="228" height="44" rx="4" fill="#D97706"/>
+                    <text x="356" y="195" fill="#FFFFFF" font-size="10" font-weight="800">階段 4｜年入 500 萬–千萬以上</text>
+                    <text x="356" y="211" fill="#FEF3C7" font-size="9">選對高天花板賽道＋投放/大V聯動＋團隊複製</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：《把熱愛變成事業》第 6 章《放大規模》。</div>
+              </div>
+
+              <!-- Right: Core Insights -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card">
+                  <div class="bucket-title">🏗️ 重點摘要：產品體系設計四步與放大規模三關鍵</div>
+                  <ul class="bucket-list">
+                    <li><strong>體系設計四步流程</strong>：① 認識自我（問朋友「你什麼情況下會想到找我」）→ ② 確立服務（清晰海報呈現內容、收費、聯繫方式）→ ③ 打造階梯（引流→標準化→高階定制）→ ④ 優先服務剛需人群。</li>
+                    <li><strong>放大規模三關鍵</strong>：① 標準化產品的規模化交付；② 引入更多流量渠道（短影音投放、與大 V 聯動）；③ 年收破百萬後構建團隊協作裂變。</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card gold-top">
+                  <div class="bucket-title">⚠️ 顧問亮點洞察：避開搭建產品體系的「四大致命坑」</div>
+                  <ul class="bucket-list">
+                    <li><strong>坑 ① 橫向盲目擴張</strong>：應縱向深耕單一領域，橫向跨界會讓個人品牌模糊。</li>
+                    <li><strong>坑 ② 起步就急著搭完整階梯</strong>：把「準備工作」誤當「驗證工作」，初期只需 1 個引流＋1 個核心產品。</li>
+                    <li><strong>坑 ③ 依賴 9.9／199 元超低價產品</strong>：非百萬粉絲賣 199 元錄播課 10 份僅收 1,990 元，連錄課成本都倒虧！應走 <strong>1 萬～5 萬元高價值路徑</strong>。</li>
+                    <li><strong>坑 ④ 缺乏具體可衡量結果包裝</strong>：如「21 天剪輯課幫學員月薪達五位數」才具說服力。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 10: 4 Revenue Stages & Action Plan -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>超級個體收入階段</th>
+                    <th>核心產品與交付形態</th>
+                    <th>本階段最大瓶頸（天花板）</th>
+                    <th>跨入下一階段的「唯一關鍵動作」与本月 KPI</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Stage 1：月入 1–5 萬</strong></td>
+                    <td>一對一諮詢、客製化接案（客單價數千至上萬元，無招生壓力）。</td>
+                    <td><strong>用時間換錢</strong>：做久了私域名單消耗殆盡，且沒時間寫內容獲客。</td>
+                    <td><strong>本週：</strong>向 5–10 位不同圈子朋友問「什麼情況會想到找我」，歸納 1–2 個高頻定位詞。<br><strong>本月：</strong>只設計「1個引流＋1個核心產品」發海報，兩週內目標收到 <strong>≥3 個具體詢價</strong>。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Stage 2：年入 50–100 萬</strong></td>
+                    <td>深度服務大客戶，或將一對一經驗轉為「標準化訓練營」規模交付。</td>
+                    <td>單靠創辦人一人交付與單一產品，客戶結業後無後續升階消費。</td>
+                    <td><strong>本月定價止損：</strong>若核心產品定價＜199 元，立即依「1萬–5萬元路徑」重寫定價試算表（客單價×預估人數－時間成本），確保不發生賣 10 份倒虧。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Stage 3–4：年入 100–500 萬+</strong></td>
+                    <td>完整升階體系（前端 5,000 元訓練營＋後端 3 萬元陪跑／合夥人）。</td>
+                    <td>流量獲取上限與創辦人親力親為的營運極限。</td>
+                    <td><strong>未來 1–3 個月：</strong>對照四階段模型寫下目前收入階段，列出跨入下一階段的<strong>唯一關鍵動作</strong>（如從 1對1 轉訓練營）並排入季度時程。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>💡 <strong>Takeaway 關鍵結論：</strong>沒有百萬粉絲，絕不要賣 199 元低價錄播課！起步只做「1 引流＋1 高價值核心品」，且第一階段 1對1 絕不可久留。</span>
+              <span>章節對應：第 6 章《放大規模》</span>
+            </div>
+
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 10 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>放大規模靠的是能提升 30%–50% LTV 的產品階梯與四階段升級路徑，但起步階段切忌一次做滿四層階梯或掉入 199 元低價陷阱。<br>
+                <strong>② 補充說明：</strong>書中算了一筆帳：沒有百萬流量的普通創業者，費盡心力錄製 199 元課程，賣出 10 份才收 1,990 元，完全無法覆蓋時間成本。更穩健的路徑是服務少數剛需客戶、走高客單價陪跑與訓練營。<br>
+                <strong>③ 下一頁轉場：</strong>有了高價值產品，為什麼很多人還是賣不出去？因為卡在「不敢開口收錢」！下一頁進入第 7 章（上）銷售心理突破與定價策略。
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 10 of 16</span>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SLIDE 11: CHAPTER 7 (PART A) - SALES MINDSET & PRICING STRATEGY
+             ================================================================ -->
+        <section class="mck-slide" id="slide-11">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 11 / 16 ｜ CHAPTER 7 (PART A): SALES PSYCHOLOGY &amp; PRICING</div>
+              <span class="badge-mck badge-emerald">🟩 驗證層：P5 銷售推廣 (上)</span>
+            </div>
+            <h2 class="mck-action-title">
+              第 7 章（上）銷售心理突破與定價策略：遵循「<span class="hl-gold">定價只漲不降</span>」原則，不靠百萬泛粉、靠<span class="hl-blue">精準私域</span>完成高單價轉化
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 11 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 11 ｜ NON-LINEAR FAN MONETIZATION &amp; ONE-WAY PRICING RATCHET</span>
+                  <span class="exhibit-title">低粉高變現三大實證案例 × 線上產品「定價只漲不降」單向棘輪法則</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <svg viewBox="0 0 600 245" width="100%">
+                    <rect width="600" height="245" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+                    <!-- Left: 3 Real Cases of Small Fans Big Revenue -->
+                    <text x="152" y="24" text-anchor="middle" fill="#051C2C" font-size="11" font-weight="800">📊 粉絲數 ≠ 變現力（書中三大實證案例）</text>
+
+                    <rect x="18" y="38" width="268" height="56" rx="5" fill="#F0F7FF" stroke="#0066CC"/>
+                    <text x="30" y="58" fill="#0066CC" font-size="11" font-weight="900">案例 1｜學員 Lulu：僅 1,000 粉絲</text>
+                    <text x="30" y="76" fill="#0F172A" font-size="10" font-weight="700">➔ 單月變現達「六位數人民幣」（＞10萬元/月）</text>
+
+                    <rect x="18" y="104" width="268" height="56" rx="5" fill="#ECFDF5" stroke="#059669"/>
+                    <text x="30" y="124" fill="#059669" font-size="11" font-weight="900">案例 2｜朋友 穎婷：僅 3,000 粉絲</text>
+                    <text x="30" y="142" fill="#0F172A" font-size="10" font-weight="700">➔ 已累計變現 50 萬元人民幣</text>
+
+                    <rect x="18" y="170" width="268" height="58" rx="5" fill="#051C2C" stroke="#D97706" stroke-width="2"/>
+                    <text x="30" y="190" fill="#FBBF24" font-size="11" font-weight="900">案例 3｜前同事 Emma：僅 10,000 精準粉絲</text>
+                    <text x="30" y="208" fill="#FFFFFF" font-size="10" font-weight="700">➔ 一次影片課賣 100+ 份 × $3,000 = 30萬美元！</text>
+
+                    <!-- Divider -->
+                    <line x1="302" y1="18" x2="302" y2="230" stroke="#CBD5E1" stroke-dasharray="4,4"/>
+
+                    <!-- Right: Pricing Staircase (Only Up, Never Down) -->
+                    <text x="450" y="24" text-anchor="middle" fill="#051C2C" font-size="11" font-weight="800">📈 為什麼線上定價「只會漲、絕不能降」？</text>
+                    <!-- Step Up Path -->
+                    <polyline points="325,185 385,185 385,145 450,145 450,100 520,100 520,55 575,55" fill="none" stroke="#059669" stroke-width="3.5"/>
+                    <text x="355" y="175" text-anchor="middle" fill="#065F46" font-size="9.5" font-weight="800">首期種子價</text>
+                    <text x="418" y="135" text-anchor="middle" fill="#065F46" font-size="9.5" font-weight="800">二期口碑價</text>
+                    <text x="485" y="90" text-anchor="middle" fill="#065F46" font-size="9.5" font-weight="800">三期標準價</text>
+                    <text x="548" y="45" text-anchor="middle" fill="#D97706" font-size="9.5" font-weight="800">高階定價</text>
+
+                    <!-- Red Warning Box -->
+                    <rect x="320" y="196" width="262" height="36" rx="4" fill="#FEF2F2" stroke="#DC2626"/>
+                    <text x="451" y="212" text-anchor="middle" fill="#991B1B" font-size="9.5" font-weight="800">❌ 定太高賣不動被迫降價＝釋放「賣不好」致命信號</text>
+                    <text x="451" y="226" text-anchor="middle" fill="#B91C1C" font-size="9">（錯誤成本不對稱：起步宜略低累積案例，再階梯調漲）</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：《把熱愛變成事業》第 7 章《銷售推廣》（上）及顧問不對稱風險推論。</div>
+              </div>
+
+              <!-- Right: Core Insights -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card">
+                  <div class="bucket-title">💰 重點摘要：突破「不敢收錢」五大心法與私域開賣</div>
+                  <ul class="bucket-list">
+                    <li><strong>突破收費心理卡點 5 方法</strong>：① 明確自身價值；② <strong>劃清友情與專業服務邊界</strong>；③ 參考同行收費行情；④ 篩選真有付費意願的客戶；⑤ 多渠道持續散發「我有收費服務」的信號。</li>
+                    <li><strong>從身邊私域開始賣</strong>：① 優化加好友時的自我介紹（一句話說清能解決什麼問題）；② 規律分享（持續、穩定、重複才能進心智）；③ 用客戶案例「種草」累積長期信任。</li>
+                    <li><strong>定價信心來源</strong>：「你買過多貴的產品，才敢賣多貴的產品」——沒體驗過 5 萬元服務，就很難想像把產品定到 5 萬元。</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card gold-top">
+                  <div class="bucket-title">💡 顧問亮點洞察：分清兩條截然不同的自媒體變現道路</div>
+                  <ul class="bucket-list">
+                    <li><strong>道路 A「內容愛好者道路」</strong>（先做內容養粉、再慢慢找產品）vs. <strong>道路 B「專業人士道路」</strong>（帶著明確產品目標，內容 100% 圍繞目標客群痛點創作）。</li>
+                    <li><strong>最大浪費時間根源</strong>：明明急需變現轉職（應走專業人士道路 B），卻去模仿娛樂/泛知識博主走散養粉絲路線 A，結果十萬粉絲仍不敢辭職！</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 11: Pricing Methods & Action Plan -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>定價與銷售維度</th>
+                    <th>方法一：以成本為基礎定價</th>
+                    <th>方法二：以價值為基礎定價（★進階首選）</th>
+                    <th>本週／本月落地行動與成功指標 (KPI)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>定價計算邏輯</strong></td>
+                    <td>投入時間與製作成本 ＋ 固定利潤率（如加 20%）。</td>
+                    <td>依產品能幫客戶<strong>省下多少時間、多賺多少錢或解決多大焦慮</strong>定價。</td>
+                    <td><strong>本週行動 1：</strong>用「成本法」與「價值法」各試算一次定價，選定一個「起步略低於預期、確保能秒殺累積口碑」的種子價格。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>價格調整軌跡</strong></td>
+                    <td colspan="2">遵循<strong>「只漲不降」單向原則</strong>：首期用種子優惠價快速成交、收集學員見證案例；每滿一期或每增加案例即公開預告調漲。</td>
+                    <td><strong>本週行動 2：</strong>寫出 <strong>100 字內自我介紹定稿</strong>（服務內容＋收費標準＋為何你能解決），加新好友立即套用；篩出私域 10–20 位潛在客，主動一對一觸達 <strong>≥5 人</strong>。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>日常內容配比</strong></td>
+                    <td colspan="2"><strong>50% 業務強相關內容</strong>（服務介紹、客戶成果見證、收費信號）＋ <strong>50% 非行銷日常／深度思考</strong>（維持真實人設溫度，避免朋友圈變純廣告牆）。</td>
+                    <td><strong>本月行動 3：</strong>制定並執行「規律發布」計畫——<strong>連續 4 週每週至少發布 3–5 條</strong>（業務與日常各半），且中間不中斷超過 3 天。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>💡 <strong>Takeaway 關鍵結論：</strong>Emma 只有 1 萬精準粉絲就能單次變現 30 萬美元！選對「專業人士道路」，本週就向私域發出你的收費服務信號。</span>
+              <span>章節對應：第 7 章《銷售推廣》（上）</span>
+            </div>
+
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 11 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>銷售突破的核心是克服不好意思收錢的心理障礙、堅持「定價只漲不降」，並走精準私域的「專業人士變現道路」。<br>
+                <strong>② 補充說明：</strong>書中舉了三個極具衝擊力的真實案例：1,000 粉絲的 Lulu 月入六位數、3,000 粉絲的穎婷變現 50 萬、1 萬粉絲的前同事 Emma 一門課賣出 100 多份共 30 多萬美元。這徹底粉碎了「等粉絲多了再賣」的藉口。<br>
+                <strong>③ 下一頁轉場：</strong>如何讓這 1,000 到 10,000 名精準受眾搶著排隊買單？下一頁第 7 章（下）拆解《Oversubscribed》八大原則與「7-11-4 法則」。
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 11 of 16</span>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SLIDE 12: CHAPTER 7 (PART B) - OVERSUBSCRIBED & 7-11-4 RULE
+             ================================================================ -->
+        <section class="mck-slide" id="slide-12">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 12 / 16 ｜ CHAPTER 7 (PART B): OVERSUBSCRIBED &amp; 7-11-4 RULE</div>
+              <span class="badge-mck badge-emerald">🟩 驗證層：P5 銷售推廣 (下)</span>
+            </div>
+            <h2 class="mck-action-title">
+              第 7 章（下）創造供不應求的排隊效應：落實《Oversubscribed》八大原則與「<span class="hl-gold">7-11-4 信任深度法則</span>」
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 12 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 12 ｜ THE 7-11-4 TRUST ENGINE &amp; 4-STAGE LAUNCH PRE-HEAT</span>
+                  <span class="exhibit-title">Google「7-11-4 深度信任量化標準」× 產品開賣前四波段預熱時間軸</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <svg viewBox="0 0 600 245" width="100%">
+                    <rect width="600" height="245" rx="6" fill="#051C2C"/>
+                    <!-- Top 3 Pillars of 7-11-4 -->
+                    <text x="300" y="24" text-anchor="middle" fill="#FBBF24" font-size="11.5" font-weight="800">🔥 對一小群人極度有名：「7-11-4 信任深度法則」＋「5C 原則」</text>
+
+                    <rect x="20" y="38" width="175" height="72" rx="5" fill="#0F2942" stroke="#38BDF8" stroke-width="2"/>
+                    <text x="107" y="64" text-anchor="middle" fill="#38BDF8" font-size="20" font-weight="900">7 Hours</text>
+                    <text x="107" y="84" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="700">累計消費你 ≥ 7 小時內容</text>
+                    <text x="107" y="100" text-anchor="middle" fill="#94A3B8" font-size="8.5">長文/直播/Podcast深度沉浸</text>
+
+                    <rect x="212" y="38" width="175" height="72" rx="5" fill="#0F2942" stroke="#F59E0B" stroke-width="2"/>
+                    <text x="300" y="64" text-anchor="middle" fill="#FBBF24" font-size="20" font-weight="900">11 Touches</text>
+                    <text x="300" y="84" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="700">被你反覆觸達 ≥ 11 次</text>
+                    <text x="300" y="100" text-anchor="middle" fill="#94A3B8" font-size="8.5">持續重複核心價值主張 (5C)</text>
+
+                    <rect x="405" y="38" width="175" height="72" rx="5" fill="#0F2942" stroke="#10B981" stroke-width="2"/>
+                    <text x="492" y="64" text-anchor="middle" fill="#34D399" font-size="20" font-weight="900">4 Locations</text>
+                    <text x="492" y="84" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="700">在 ≥ 4 個平台場景看過你</text>
+                    <text x="492" y="100" text-anchor="middle" fill="#94A3B8" font-size="8.5">跨平台立體信任（搜尋引擎測試）</text>
+
+                    <!-- Bottom: 4-Stage Pre-Heat Launch Timeline -->
+                    <rect x="20" y="124" width="560" height="106" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)"/>
+                    <text x="300" y="145" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="800">🚀 先創造市場再賣貨：開賣前 14 天「四階段預熱排隊流程」</text>
+
+                    <rect x="34" y="158" width="122" height="56" rx="4" fill="#1E293B"/>
+                    <text x="95" y="176" text-anchor="middle" fill="#38BDF8" font-size="9.5" font-weight="800">Wave 1 (D-14)</text>
+                    <text x="95" y="192" text-anchor="middle" fill="#FFFFFF" font-size="9.5">透露研發想法</text>
+                    <text x="95" y="206" text-anchor="middle" fill="#94A3B8" font-size="8.5">徵集痛點與共創感</text>
+
+                    <rect x="170" y="158" width="122" height="56" rx="4" fill="#1E293B"/>
+                    <text x="231" y="176" text-anchor="middle" fill="#38BDF8" font-size="9.5" font-weight="800">Wave 2 (D-10)</text>
+                    <text x="231" y="192" text-anchor="middle" fill="#FFFFFF" font-size="9.5">釋出課綱與嘉賓</text>
+                    <text x="231" y="206" text-anchor="middle" fill="#94A3B8" font-size="8.5">展示往期學員成果</text>
+
+                    <rect x="306" y="158" width="122" height="56" rx="4" fill="#0066CC"/>
+                    <text x="367" y="176" text-anchor="middle" fill="#FDE68A" font-size="9.5" font-weight="800">Wave 3 (D-5)</text>
+                    <text x="367" y="192" text-anchor="middle" fill="#FFFFFF" font-size="9.5">開放意向候補登記</text>
+                    <text x="367" y="206" text-anchor="middle" fill="#E0F2FE" font-size="8.5">確認需求遠大於供給</text>
+
+                    <rect x="442" y="158" width="124" height="56" rx="4" fill="#D97706"/>
+                    <text x="504" y="176" text-anchor="middle" fill="#FFFFFF" font-size="9.5" font-weight="800">Wave 4 (Launch)</text>
+                    <text x="504" y="192" text-anchor="middle" fill="#FEF3C7" font-size="9.5">限量名額＋早鳥開搶</text>
+                    <text x="504" y="206" text-anchor="middle" fill="#FFFFFF" font-size="8.5" font-weight="700">48hr 內售出過半！</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：《把熱愛變成事業》第 7 章（引用 Daniel Priestley《Oversubscribed》八大原則与 7-11-4 法則）。</div>
+              </div>
+
+              <!-- Right: Core Insights -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card">
+                  <div class="bucket-title">🔥 重點摘要：《Oversubscribed》讓客戶排長隊的八大原則</div>
+                  <ul class="bucket-list">
+                    <li><strong>原則 ①–④（供需與預熱）</strong>：① <strong>只有供給小於需求的生意才能賺大錢</strong>（如 GaryVee 拍賣 1 小時諮詢從 500 喊到 4,000 英鎊）；② 只有「你的人」最重要（7-11-4 與 5C 原則）；③ <strong>先創造市場再賣貨</strong>（預熱造勢）；④ 人們只在條件合適時購買（限量供給、愛馬仕配貨制；只買想要的、跟風、看評價）。</li>
+                    <li><strong>原則 ⑤–⑧（生態與口碑）</strong>：⑤ 敢於不同、制定自己規矩；⑥ 構建生態系統（免費給知識、對服務收費，讓客戶爬小台階而非翻高牆）；⑦ 用目標客戶語言對話；⑧ 好到讓人印象深刻（經得起搜尋引擎測試）。</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card gold-top">
+                  <div class="bucket-title">💡 顧問亮點洞察：別再焦慮泛流量，改算「7-11-4 深度人數」</div>
+                  <ul class="bucket-list">
+                    <li><strong>把模糊流量焦慮轉為量化指標</strong>：只要累積 <strong>5,000～10,000 個符合 7-11-4 的深度受眾</strong>（甚至起步 500–1,000 人），每次開課限定 30 名額，就能永遠保持「供不應求」的秒殺狀態！</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 12: Oversubscribed Execution & Action Plan -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>排隊效應核心機制</th>
+                    <th>傳統無效賣貨做法（無人問津）</th>
+                    <th>《Oversubscribed》顧問級操作法</th>
+                    <th>本月／下次發品落地行動與成功指標 (KPI)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1. 信任深度累積<br>（7-11-4 ＋ 5C 原則）</strong></td>
+                    <td>單一平台發短圖文，受眾看過 10 秒就滑走，毫無信任沉澱。</td>
+                    <td>跨 4 個接觸點（如 IG/Threads/LINE/長文簡報），讓受眾累計沉浸 7 小時、觸達 11 次以上。</td>
+                    <td><strong>本月內：</strong>盤點目前已達標「7-11-4」的精準受眾基準值，設定 <strong>3 個月內累積 500–1,000 名深度受眾</strong>的具體內容矩陣。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>2. 供給與需求控制<br>（供給 ＜ 需求）</strong></td>
+                    <td>不限名額、隨時可買，結果客戶覺得「反正隨時有，以後再說」。</td>
+                    <td>嚴格限制每期交付名額（如限額 20–30 人），先開放候補意向登記（如 100 人登記搶 30 席）。</td>
+                    <td rowspan="2"><strong>下次推新產品前：</strong>強制套用 4 波段預熱流程（提前 2 週：透露想法 → 釋出細節賣點 → 開放意向登記 → 限量早鳥開賣），完成 <strong>≥3 次分階段預熱</strong>，以<strong>「開賣 48 小時內售出過半名額」</strong>為驗收指標。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3. 購買台階設計<br>（爬小台階非翻高牆）</strong></td>
+                    <td>一上來就推萬元高價課給陌生人，轉化率趨近於零。</td>
+                    <td>免費乾貨建立認知 ➔ 直播/公開課互動 ➔ 意向群預熱 ➔ 限量成交，每一步都是順暢小台階。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>💡 <strong>Takeaway 關鍵結論：</strong>嚴禁「突襲式直接開賣」！先讓 500 人看滿你 7 小時內容，再用 2 週 3 波段預熱把 30 個名額變成搶手貨。</span>
+              <span>章節對應：第 7 章《銷售推廣》（下）</span>
+            </div>
+
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 12 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>要讓產品不愁賣，核心是創造「供給小於需求」的排隊效應，並用 7-11-4 法則深化鐵粉信任。<br>
+                <strong>② 補充說明：</strong>為什麼很多人的課程開賣時冷冷清清？因為他們事前零預熱，突然發一張海報叫大家買。真正的高手在開賣前兩週就開始透露研發進度、收集意向名單，確認有 100 人想買時才開放 30 個名額，自然開賣即秒殺。<br>
+                <strong>③ 下一頁轉場：</strong>當驗證層（品牌、產品、銷售）全面跑通、訂單湧入後，一個人忙不過來怎麼辦？下一頁進入第 8 章合作夥伴與非雇傭團隊。
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 12 of 16</span>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SLIDE 13: CHAPTER 8 - PARTNERSHIPS & NON-EMPLOYMENT NETWORK
+             ================================================================ -->
+        <section class="mck-slide" id="slide-13">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 13 / 16 ｜ CHAPTER 8: PARTNERSHIPS &amp; NON-EMPLOYMENT NETWORK</div>
+              <span class="badge-mck badge-gold">🟨 放大層：P6 合作夥伴</span>
+            </div>
+            <h2 class="mck-action-title">
+              第 8 章 合作夥伴與團隊搭建：「<span class="hl-gold">在路上找人，而非拉人上路</span>」，早期先找教練補短板，並以<span class="hl-blue">非雇傭兼職網絡</span>維持高彈性
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 13 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 13 ｜ DELEGATION SEQUENCE &amp; NON-EMPLOYMENT NETWORK</span>
+                  <span class="exhibit-title">個人事業四大板塊外包先後順序 ×「3年 0 全職員工」非雇傭協作網</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <svg viewBox="0 0 600 245" width="100%">
+                    <rect width="600" height="245" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+                    <!-- Left: 4 Business Blocks Delegation Order -->
+                    <text x="155" y="24" text-anchor="middle" fill="#051C2C" font-size="11" font-weight="800">🧩 業務擴大時四大板塊「分出去」的順序</text>
+
+                    <rect x="20" y="38" width="270" height="42" rx="4" fill="#D1FAE5" stroke="#059669" stroke-width="1.5"/>
+                    <text x="32" y="56" fill="#065F46" font-size="10.5" font-weight="800">第 1 順位分出：交付運營（社群維護/助教答疑）</text>
+                    <text x="32" y="71" fill="#047857" font-size="9">最易標準化 SOP，優先從「優秀學員」中招募兼職</text>
+
+                    <rect x="20" y="88" width="270" height="42" rx="4" fill="#E0F2FE" stroke="#0284C7"/>
+                    <text x="32" y="106" fill="#0369A1" font-size="10.5" font-weight="800">第 2 順位分出：銷售轉化（私域客服/流程跟進）</text>
+                    <text x="32" y="121" fill="#0F172A" font-size="9">創辦人跑通話術閉環後，交由兼職銷售助手放大</text>
+
+                    <rect x="20" y="138" width="270" height="42" rx="4" fill="#FEF3C7" stroke="#D97706"/>
+                    <text x="32" y="156" fill="#92400E" font-size="10.5" font-weight="800">第 3 順位分出：產品打造（剪輯/排版/聯合導師）</text>
+                    <text x="32" y="171" fill="#78350F" font-size="9">核心架構創辦人把關，或由團隊成員技能內部孵化</text>
+
+                    <rect x="20" y="188" width="270" height="44" rx="4" fill="#051C2C"/>
+                    <text x="32" y="206" fill="#FBBF24" font-size="10.5" font-weight="800">🔒 最後才能分（核心 C 位）：內容流量</text>
+                    <text x="32" y="222" fill="#CBD5E1" font-size="9">IP 天然需創辦人親自出鏡表達，絕不可早期全權外包！</text>
+
+                    <!-- Divider -->
+                    <line x1="305" y1="18" x2="305" y2="230" stroke="#CBD5E1" stroke-dasharray="4,4"/>
+
+                    <!-- Right: Non-Employment Hub -->
+                    <text x="450" y="24" text-anchor="middle" fill="#051C2C" font-size="11" font-weight="800">🕸️ 凱莉彭「3年 0 全職」非雇傭彈性合作網</text>
+                    <circle cx="450" cy="125" r="40" fill="#051C2C" stroke="#D97706" stroke-width="2.5"/>
+                    <text x="450" y="121" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="900">創辦人 C位</text>
+                    <text x="450" y="136" text-anchor="middle" fill="#FDE68A" font-size="9">六邊形戰士</text>
+
+                    <!-- Satellite Nodes -->
+                    <rect x="318" y="42" width="105" height="32" rx="4" fill="#0066CC"/>
+                    <text x="370" y="62" text-anchor="middle" fill="#FFFFFF" font-size="9.5" font-weight="700">付費教練補短板</text>
+
+                    <rect x="478" y="42" width="105" height="32" rx="4" fill="#059669"/>
+                    <text x="530" y="62" text-anchor="middle" fill="#FFFFFF" font-size="9.5" font-weight="700">學員轉兼職助教</text>
+
+                    <rect x="318" y="176" width="105" height="32" rx="4" fill="#0F2942"/>
+                    <text x="370" y="196" text-anchor="middle" fill="#FFFFFF" font-size="9.5" font-weight="700">按件計費剪輯師</text>
+
+                    <rect x="478" y="176" width="105" height="32" rx="4" fill="#0F2942"/>
+                    <text x="530" y="196" text-anchor="middle" fill="#FFFFFF" font-size="9.5" font-weight="700">專案分潤合作方</text>
+
+                    <text x="450" y="228" text-anchor="middle" fill="#059669" font-size="9.5" font-weight="800">✓ 按工作量結算・無固定月薪包袱・Hire slow, fire fast</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：《把熱愛變成事業》第 8 章《合作夥伴》。</div>
+              </div>
+
+              <!-- Right: Core Insights -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card">
+                  <div class="bucket-title">🤝 重點摘要：在路上找人、分蛋糕原則與非雇傭制</div>
+                  <ul class="bucket-list">
+                    <li><strong>在路上找人，而非拉人上路</strong>：自媒體初期一人即可跑通「產品、內容、銷售」三項；先自己走通全流程，再從<strong>認同你價值觀的優秀學員</strong>中招募協力者，上手最快、溝通成本最低。</li>
+                    <li><strong>先找「教練」而非找「合夥人」</strong>：早期不懂直播、不懂課綱，應花錢請教前輩教練把自己練成「六邊形戰士」，切忌因自己不懂就全權外包給別人。</li>
+                    <li><strong>分蛋糕原則</strong>：<strong>先確保自己滿意的那份利益，再談對團隊大方</strong>（書中反例：某創業者把 30% 營收分給僅做社群維護的助手，導致自己失去開課動力）。</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card gold-top">
+                  <div class="bucket-title">💡 顧問亮點洞察：破除「創業＝找共同創辦人＋招全職」迷思</div>
+                  <ul class="bucket-list">
+                    <li><strong>過早合夥的致命反噬</strong>：書中博主朋友與合夥人拆夥，結果帳號產權歸公司所有，被迫淨身出戶從零重練。方向未定時，人多反而難以掉頭。</li>
+                    <li><strong>非雇傭關係（按件/按量結算）</strong>：小而美業務具有波峰波谷，不簽全職固定月薪，才不會在淡季被固定人事成本壓垮。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 13: Team & Partnership Governance Table -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>團隊搭建決策點</th>
+                    <th>❌ 打工人創業常見誤區（重資產高風險）</th>
+                    <th>✅ 超級個體最佳實踐（輕資產高彈性）</th>
+                    <th>本週／本月落地行動與成功指標 (KPI)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1. 啟動期人力配置</strong></td>
+                    <td>還沒賺到第一塊錢，就先拉朋友當共同創辦人平分股權。</td>
+                    <td><strong>一人就是一支隊伍</strong>：自己獨立跑通「內容→銷售→交付」最小閉環。</td>
+                    <td><strong>本週：</strong>盤點四大環節（產品/內容/銷售/交付）目前由誰完成與耗時占比。<br><strong>本月：</strong>未跑通前不找合夥人，獨立完成 <strong>3 篇內容＋1 次成交閉環</strong>。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>2. 面對自身能力短板</strong></td>
+                    <td>「我不懂流量／不懂剪輯，找個人全權外包給他做就好。」</td>
+                    <td><strong>花錢買教練時間補認知</strong>：創辦人必須懂底層邏輯，才具備驗收與把關能力。</td>
+                    <td><strong>本月：</strong>針對最大能力短板（直播/剪輯/課綱），完成 <strong>1 次付費教練諮詢或課程</strong>，並產出 1 份可直接用於業務的腳本或大綱。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3. 擴張期合作與分潤</strong></td>
+                    <td>憑「感情深」口頭合作無規則；或直接聘請全職固定月薪員工。</td>
+                    <td><strong>招人宜慢、開人宜快</strong>；白紙黑字寫清職責分潤；全採<strong>非雇傭按量結算</strong>。</td>
+                    <td><strong>本週/本月：</strong>為協力者草擬<strong>「職責與分潤規則書面文件」</strong>；找到至少 <strong>1 位按件計費兼職夥伴</strong>完成一次試合作結算。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>💡 <strong>Takeaway 關鍵結論：</strong>方向未明時千萬別找合夥人！先付費找教練把自己練成六邊形戰士，擴大時優先把「交付運營」按件外包給學員。</span>
+              <span>章節對應：第 8 章《合作夥伴》</span>
+            </div>
+
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 13 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>超級個體應秉持「在路上找人」原則，早期靠教練補短板，擴張期以非雇傭兼職網絡外包交付運營。<br>
+                <strong>② 補充說明：</strong>作者創業三年年入數百萬，卻沒有雇用任何一位全職員工，全部採用按工作量結算的兼職合作，且多數來自最認同她的學員。切記分蛋糕時要先保障創辦人自己的核心利益，否則會失去持續創作的動力。<br>
+                <strong>③ 下一頁轉場：</strong>當產品體系與非雇傭協力網都就位後，如何把事業推向終極的複利自由？下一頁進入第 9 章：三大槓桿與逃離老鼠陷阱。
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 13 of 16</span>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SLIDE 14: CHAPTER 9 - LEVERAGE, COMPOUNDING & RAT RACE
+             ================================================================ -->
+        <section class="mck-slide" id="slide-14">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 14 / 16 ｜ CHAPTER 9: NAVAL'S 3 LEVERS, COMPOUNDING &amp; TIME AUDIT</div>
+              <span class="badge-mck badge-gold">🟨 放大層：槓桿與複利奇蹟</span>
+            </div>
+            <h2 class="mck-action-title">
+              第 9 章 槓桿與複利奇蹟：善用零邊際成本的「<span class="hl-blue">數位槓桿</span>」，逃離時間換錢的老鼠陷阱，堅持留在牌桌上等待<span class="hl-gold">第三年爆發</span>
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 14 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 14 ｜ DIGITAL LEVERAGE &amp; THE J-CURVE OF COMPOUNDING</span>
+                  <span class="exhibit-title">納瓦爾三大槓桿 × Ali Abdaal「前兩年平緩、第三年爆發」複利曲線</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <img src="images/leverage-compounding.jpg" alt="數位槓桿支點與指數級複利曲線">
+                  <svg viewBox="0 0 600 135" width="100%">
+                    <rect width="600" height="135" rx="6" fill="#051C2C"/>
+                    <!-- Left: Compounding Curve -->
+                    <text x="155" y="22" text-anchor="middle" fill="#38BDF8" font-size="10.5" font-weight="800">📈 複利效應真相：前兩年無人問津 vs. 第三年爆發</text>
+                    <line x1="25" y1="110" x2="285" y2="110" stroke="#64748B" stroke-width="1.5"/>
+                    <line x1="25" y1="30" x2="25" y2="110" stroke="#64748B" stroke-width="1.5"/>
+                    <!-- Exponential Curve -->
+                    <path d="M 30 106 Q 160 105 200 95 T 275 32" fill="none" stroke="#F59E0B" stroke-width="3.5"/>
+                    <line x1="190" y1="30" x2="190" y2="110" stroke="#EF4444" stroke-dasharray="3,3"/>
+                    <text x="108" y="90" text-anchor="middle" fill="#FCA5A5" font-size="9" font-weight="700">Year 1–2 潛伏期（90%人在此放棄）</text>
+                    <text x="238" y="52" text-anchor="middle" fill="#FDE68A" font-size="9.5" font-weight="800">Year 3+ 指數爆發</text>
+                    <text x="155" y="126" text-anchor="middle" fill="#CBD5E1" font-size="9">案例：Ali Abdaal 前2年幾無收益，留在牌桌上迎來千萬營收</text>
+
+                    <!-- Right: Escaping the Rat Trap -->
+                    <rect x="305" y="12" width="280" height="112" rx="5" fill="#0F2942" stroke="#10B981"/>
+                    <text x="445" y="32" text-anchor="middle" fill="#34D399" font-size="10.5" font-weight="800">🐭 逃離「時間管理老鼠陷阱」（心理諮商師案例）</text>
+                    <text x="316" y="54" fill="#FCA5A5" font-size="9.5" font-weight="700">❌ 老鼠陷阱：被「緊急不重要」的 1對1 諮詢塞滿</text>
+                    <text x="316" y="70" fill="#94A3B8" font-size="9">永遠用一份時間換一份錢，抽不出空做標準化課程</text>
+                    <text x="316" y="92" fill="#6EE7B7" font-size="9.5" font-weight="700">✅ 破局關鍵：鎖死「重要不緊急」資產建設時間</text>
+                    <text x="316" y="108" fill="#FFFFFF" font-size="9">寫內容、做標準課、大方付費買專家時間少走半年彎路</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：《把熱愛變成事業》第 9 章（引用《納瓦爾寶典》、Ali Abdaal、Pieter Levels 月被動收入 21 萬美元案例）。</div>
+              </div>
+
+              <!-- Right: Core Insights -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card">
+                  <div class="bucket-title">⚙️ 重點摘要：三大槓桿與「先開槍、再瞄準」</div>
+                  <ul class="bucket-list">
+                    <li><strong>納瓦爾三大槓桿</strong>：① <strong>人力槓桿</strong>（線上兼職與獨立顧問）；② <strong>資本槓桿</strong>（管理資本比管人容易）；③ <strong>數位槓桿</strong>（邊際複製成本為零的內容、課程、程式碼，<strong>不需他人許可即可使用</strong>）。</li>
+                    <li><strong>自媒體是普通人唯一觸手可及的數位槓桿</strong>：只需一支手機，但全網僅 10%–20% 是創作者，80%–90% 只是消費者。獨立開發者 Pieter Levels 靠小工具＋個人品牌月被動收入達 21 萬美元。</li>
+                    <li><strong>大方付費買別人的時間</strong>：作者前半年抗拒付費走了彎路，後每年投資六位數學習費（時間是不可再生資源）。</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card gold-top">
+                  <div class="bucket-title">💡 顧問亮點洞察：方法論的兩條重要適用邊界（顧問校準）</div>
+                  <ul class="bucket-list">
+                    <li><strong>邊界 ①「複利等待期」需自設停損點</strong>：書中強調前兩年無人問津要堅持，但未給出「撐多久算合理停損」的量化標準；學員必須自設停損機制（顧問延伸推論）。</li>
+                    <li><strong>邊界 ②「付費買時間」需辨別割韭菜</strong>：付費請教專家極具價值，但須先檢核對方是否有真實落地案例與可驗證交付物（顧問延伸推論）。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 14: 3 Levers Comparison & Action Plan -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>三大槓桿類型</th>
+                    <th>核心載體與邊際成本</th>
+                    <th>是否需要他人許可？</th>
+                    <th>本週／本月／本季落地行動與成功指標 (KPI)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1. 數位槓桿（★首選起點）</strong></td>
+                    <td>自媒體內容、線上標準化課程、AI Agent／軟體工具（<strong>複製邊際成本＝0</strong>）。</td>
+                    <td><strong>完全不需許可</strong>（一支手機與電腦即可啟動全球分發）。</td>
+                    <td><strong>本週（時間審計）：</strong>列出過去 7 天所有事項，計算<strong>「重要不緊急」（寫內容/做產品/建品牌）時數占比</strong>；設定 7 天內「先開槍再瞄準」完成 1 個具體動作。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>2. 人力槓桿（進階協作）</strong></td>
+                    <td>按工作量結算的兼職助教、剪輯師、外部專業顧問（法律/財務）與 AI 代理軍團。</td>
+                    <td>需管理協調成本（建議採非雇傭制與 AI 逆分工）。</td>
+                    <td><strong>本月（逃離老鼠陷阱）：</strong>將至少 1 項「緊急不重要」瑣事委派或工具化，在行事曆<strong>每週鎖死 3 小時不可取消時段</strong>撰寫標準化產品大綱。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3. 資本槓桿（規模放大）</strong></td>
+                    <td>付費購買專家經驗、廣告投放放大已驗證之高 ROI 漏斗、金融資產複利。</td>
+                    <td>需自有現金流或外部資金許可。</td>
+                    <td><strong>本季（買時間投資）：</strong>針對最大認知缺口，選定 1 項付費專家諮詢或學習投資（設預算上限與驗收標準），產出 1 項直接用於業務的交付物。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>💡 <strong>Takeaway 關鍵結論：</strong>如果行事曆被 1對1 交付塞滿，你只是換個地方打工！每週鎖死 3 小時打造「邊際成本為零」的數位槓桿資產。</span>
+              <span>章節對應：第 9 章《做對的事情，你一輩子都不想退休》</span>
+            </div>
+
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 14 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>終極財富自由來自零邊際成本的「數位槓桿」與長期複利，前提是逃離一對一時間換錢的老鼠陷阱。<br>
+                <strong>② 補充說明：</strong>書中心理諮商師的案例非常警醒：因為一對一諮詢單價好、馬上見效，她把所有時間排滿諮詢，結果永遠抽不出時間開發標準化課程，收入徹底卡死。這也是為什麼本週時間審計如此關鍵。<br>
+                <strong>③ 下一頁轉場：</strong>讀完全書九章後，這套超級個體方法論與我們知識庫既有的《高績效教練》及「台哥大破繭重生」有何呼應與衝突？下一頁進入跨書戰略整合。
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 14 of 16</span>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SLIDE 15: CROSS-BOOK SYNTHESIS & SURVIVORSHIP BIAS GUARDRAILS
+             ================================================================ -->
+        <section class="mck-slide" id="slide-15">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 15 / 16 ｜ CROSS-BOOK SYNTHESIS &amp; METHODOLOGY BOUNDARIES</div>
+              <span class="badge-mck badge-navy">🟪 顧問整合：跨書對照與邊界</span>
+            </div>
+            <h2 class="mck-action-title">
+              跨書戰略整合：對照《<span class="hl-blue">高績效教練</span>》與「<span class="hl-blue">台哥大破繭重生</span>」，釐清帶人與測市場的快慢張力，建立<span class="hl-gold">理性停損邊界</span>
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 15 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 15 ｜ CROSS-BOOK TENSION MATRIX &amp; 82% CONFIDENCE AUDIT</span>
+                  <span class="exhibit-title">三維戰略張力模型（帶人慢 vs. 測市場快）× 四大方法論缺口校準</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <svg viewBox="0 0 600 245" width="100%">
+                    <rect width="600" height="245" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+                    <!-- Left: Speed & Expertise Tension Quadrant -->
+                    <text x="155" y="24" text-anchor="middle" fill="#051C2C" font-size="11" font-weight="800">⚖️ 跨書張力校準：依「場景」切換快慢與專業度</text>
+                    <rect x="20" y="38" width="270" height="90" rx="5" fill="#E0F2FE" stroke="#0284C7"/>
+                    <text x="32" y="58" fill="#0369A1" font-size="10.5" font-weight="800">場景 A｜外部市場驗證（凱莉彭《把熱愛變成事業》）</text>
+                    <text x="32" y="76" fill="#0F172A" font-size="9.5">• 速度：⚡ 極致求快（先開槍再瞄準、7天內行動）</text>
+                    <text x="32" y="92" fill="#0F172A" font-size="9.5">• 專業：領先學員 3–4 級，但用 6 歲聽懂的話傳播</text>
+                    <text x="32" y="108" fill="#0369A1" font-size="9" font-weight="700">• 理由：市場真需求只能靠真金白銀快速試錯取得</text>
+
+                    <rect x="20" y="138" width="270" height="92" rx="5" fill="#ECFDF5" stroke="#059669"/>
+                    <text x="32" y="158" fill="#065F46" font-size="10.5" font-weight="800">場景 B｜組織帶人與轉型（Whitmore × 林之晨）</text>
+                    <text x="32" y="176" fill="#0F172A" font-size="9.5">• 速度：🐢 刻意放慢提問（GROW模型建立對方責任感）</text>
+                    <text x="32" y="192" fill="#0F172A" font-size="9.5">• 專業：放下專家指導欲；砍指標至2項（ARPU/流失率）</text>
+                    <text x="32" y="208" fill="#065F46" font-size="9" font-weight="700">• 理由：人的覺察與企業破繭（7.5年）需要長期耐受</text>
+
+                    <!-- Divider -->
+                    <line x1="305" y1="18" x2="305" y2="230" stroke="#CBD5E1" stroke-dasharray="4,4"/>
+
+                    <!-- Right: 82% Confidence & 4 Gaps -->
+                    <rect x="318" y="18" width="266" height="212" rx="6" fill="#051C2C"/>
+                    <text x="451" y="42" text-anchor="middle" fill="#FBBF24" font-size="11.5" font-weight="800">🛡️ 顧問把握度自檢：82%（四大缺口護欄）</text>
+
+                    <rect x="332" y="54" width="238" height="36" rx="4" fill="#1E293B" stroke="#F87171"/>
+                    <text x="342" y="70" fill="#FCA5A5" font-size="9.5" font-weight="800">缺口 1｜100% 倖存者偏差（影響：高）</text>
+                    <text x="342" y="83" fill="#CBD5E1" font-size="8.5">全書無失敗率統計 ➔ 對策：強制設定 3 個月與金額停損線</text>
+
+                    <rect x="332" y="96" width="238" height="36" rx="4" fill="#1E293B" stroke="#FBBF24"/>
+                    <text x="342" y="112" fill="#FDE68A" font-size="9.5" font-weight="800">缺口 2｜大陸微信生態地域落差（影響：中高）</text>
+                    <text x="342" y="125" fill="#CBD5E1" font-size="8.5">人民幣與微信綁定 ➔ 對策：轉譯為 LINE OA / IG / Threads</text>
+
+                    <rect x="332" y="138" width="238" height="36" rx="4" fill="#1E293B" stroke="#38BDF8"/>
+                    <text x="342" y="154" fill="#38BDF8" font-size="9.5" font-weight="800">缺口 3｜學員個人現況五維度未知（影響：高）</text>
+                    <text x="342" y="167" fill="#CBD5E1" font-size="8.5">在職/技能/緩衝未知 ➔ 對策：Slide 16 五維度自檢表校準</text>
+
+                    <rect x="332" y="180" width="238" height="36" rx="4" fill="#1E293B" stroke="#34D399"/>
+                    <text x="342" y="196" fill="#6EE7B7" font-size="9.5" font-weight="800">缺口 4｜AI 算力與逆分工整合（補強）</text>
+                    <text x="342" y="209" fill="#CBD5E1" font-size="8.5">結合 Polsia 80/20 哲學與 EgentHub 1人指揮10 Agent</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：《把熱愛變成事業_逐章分析與行動方案》第二節「全書整合建議」與第四節「把握度自檢」。</div>
+              </div>
+
+              <!-- Right: Core Insights -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card">
+                  <div class="bucket-title">🔗 與《高績效教練》及「台哥大破繭重生」的呼應與補強</div>
+                  <ul class="bucket-list">
+                    <li><strong>共同底層假設（績效＝潛能－干擾）</strong>：Whitmore 指出限制產出的是干擾；凱莉彭具體點名四大干擾——<strong>工資陷阱、孔乙己長衫、身邊人勸退、等準備好再開始</strong>。</li>
+                    <li><strong>補強商業變現閉環</strong>：《高績效教練》停在組織內領導與心理層面；本書補上「一人超級個體」的定價、產品階梯、私域資產與非雇傭團隊。</li>
+                    <li><strong>呼應林之晨「從既有資產長新事業」</strong>：如同台哥大從帳單代收長出 200 億新事業，個人創業也應從「既有 Lv 3–4 專業與既有朋友圈」長出第一單諮詢。</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card gold-top">
+                  <div class="bucket-title">🚨 顧問風險警示：正視本書「倖存者偏差」，建立停損護欄</div>
+                  <ul class="bucket-list">
+                    <li><strong>全書案例（作者、穎婷、Lulu、Emma）皆為成功存活者</strong>，未討論同期有多少人做了同樣的事卻無結果。套用「撐過兩年複利期」前，必須設定明確的<strong>試錯期限、資金上限與最小成交驗證門檻</strong>。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 15: Cross-Book Synthesis & Stop-Loss Guardrail Table -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>對照維度</th>
+                    <th>《把熱愛變成事業》凱莉彭</th>
+                    <th>《高績效教練》Whitmore ／《破繭重生》林之晨</th>
+                    <th>學員實戰整合取捨準則（含停損條件）</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>行動節奏取捨</strong></td>
+                    <td><strong>先開槍再瞄準</strong>：7 天內做出第一個動作，用海報直接測市場。</td>
+                    <td><strong>教練式領導要慢</strong>（不直接給答案）；企業轉型需耐受 5–7 年低谷。</td>
+                    <td>區分場景：<strong>「測市場需求」採用凱莉彭極速法</strong>；<strong>「帶團隊/做高階陪跑教練」採用 Whitmore GROW 提問法</strong>。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>指標與資產聚焦</strong></td>
+                    <td>砍掉公域粉絲數虛榮指標，只看<strong>私域精準好友數與 7-11-4 深度</strong>。</td>
+                    <td>林之晨將台哥大管理指標砍到只剩 <strong>ARPU 與流失率</strong>兩項。</td>
+                    <td>超級個體儀表板只留 2 個核心指標：<strong>① 每月新增精準私域數；② 核心產品轉化率與客單價 (ARPU)</strong>。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>倖存者偏差停損線<br>（顧問強制護欄）</strong></td>
+                    <td>主張複利前兩年無人問津仍要留在牌桌上（未給停損點）。</td>
+                    <td>強調覺察真實處境（Reality），拒絕自欺欺人。</td>
+                    <td><strong>強制設定三合一停損條件：</strong>試錯每滿 <strong>90 天</strong>、投入上限 <strong>X 萬元</strong>，若未達成 <strong>≥3 筆真實陌生付費成交</strong>，必須暫停並回頭修正定位與痛點，絕不盲目硬撐兩年。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>💡 <strong>Takeaway 關鍵結論：</strong>測市場要像凱莉彭一樣「7天先開槍」，帶人與做陪跑要像《高績效教練》一樣「慢問賦能」，並嚴守 90 天 3 單成交的停損線！</span>
+              <span>章節對應：第二節「全書整合建議」與第四節「把握度自檢」</span>
+            </div>
+
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 15 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>將本書與《高績效教練》及林之晨「破繭重生」整合後，我們得出「測市場求快、帶人求慢、指標極簡」的複合策略，並補上倖存者偏差的停損護欄。<br>
+                <strong>② 補充說明：</strong>顧問對本書方法論給出 82% 把握度，扣掉的 18% 來自原書 100% 倖存者偏差與微信地域落差。因此我們強制規定：任何項目每 90 天檢核一次，沒拿到 3 筆真實付款就回頭改定位，避免把「無效努力」當成「等待複利」。<br>
+                <strong>③ 下一頁轉場：</strong>最後一頁 Slide 16，我們將全書 46 項行動濃縮成一張「90 天三階段落地藍圖」與「個人現況五維度自檢表」，讓你今天就能啟動！
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 15 of 16</span>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SLIDE 16: 90-DAY EXECUTION ROADMAP & 5-DIMENSION SELF-CHECK
+             ================================================================ -->
+        <section class="mck-slide" id="slide-16">
+          <div class="mck-slide-top">
+            <div class="mck-tracker-row">
+              <div class="mck-breadcrumb">SLIDE 16 / 16 ｜ 90-DAY ACTION ROADMAP &amp; 5-DIMENSION DIAGNOSTIC</div>
+              <span class="badge-mck badge-gold">🟪 終章：90 天落地執行藍圖</span>
+            </div>
+            <h2 class="mck-action-title">
+              全書總結與 90 天落地執行藍圖：從本週「<span class="hl-blue">財務與時間審計</span>」開始，<span class="hl-gold">7 天內</span>完成第一個最小商業驗證動作
+            </h2>
+          </div>
+
+          <div class="mck-slide-body">
+            <div class="mck-two-col">
+              <!-- Left: Visual Exhibit 16 -->
+              <div class="mck-exhibit-box">
+                <div class="exhibit-header">
+                  <span class="exhibit-label">EXHIBIT 16 ｜ 90-DAY SPRINT GANTT &amp; STOP-LOSS GATEWAY</span>
+                  <span class="exhibit-title">超級個體轉型 90 天三階段衝刺路線圖（Week 1 ➔ Month 1 ➔ Quarter 1）</span>
+                </div>
+                <div class="exhibit-canvas">
+                  <svg viewBox="0 0 600 245" width="100%">
+                    <rect width="600" height="245" rx="6" fill="#051C2C"/>
+                    <text x="300" y="24" text-anchor="middle" fill="#FBBF24" font-size="11.5" font-weight="800">🗓️ 從「讀完一本書」到「跑通現金流閉環」90 天衝刺藍圖</text>
+
+                    <!-- Phase 1: Week 1 -->
+                    <rect x="18" y="38" width="178" height="186" rx="5" fill="#0F2942" stroke="#38BDF8" stroke-width="2"/>
+                    <rect x="18" y="38" width="178" height="28" rx="5" fill="#0284C7"/>
+                    <text x="107" y="56" text-anchor="middle" fill="#FFFFFF" font-size="10.5" font-weight="800">🔥 第一階段：本週破局 (Day 1–7)</text>
+                    <text x="28" y="84" fill="#FFFFFF" font-size="9.5" font-weight="700">1. 財務支出審計 (Ch1)</text>
+                    <text x="28" y="98" fill="#94A3B8" font-size="8.5">支出占收入壓在70%內，砍1項開支</text>
+                    <text x="28" y="118" fill="#FFFFFF" font-size="9.5" font-weight="700">2. 7天時間審計 (Ch9)</text>
+                    <text x="28" y="132" fill="#94A3B8" font-size="8.5">算出「重要不緊急」時數占比</text>
+                    <text x="28" y="152" fill="#FFFFFF" font-size="9.5" font-weight="700">3. IKIGAI＋5高光時刻 (Ch2)</text>
+                    <text x="28" y="166" fill="#94A3B8" font-size="8.5">圈出三圈交集與Why 3問事實</text>
+                    <text x="28" y="186" fill="#38BDF8" font-size="9.5" font-weight="800">4. 先開槍：發首篇故事文</text>
+                    <text x="28" y="200" fill="#A7F3D0" font-size="8.5">＋完成100字收費服務自我介紹</text>
+
+                    <!-- Phase 2: Month 1 -->
+                    <rect x="211" y="38" width="178" height="186" rx="5" fill="#0F2942" stroke="#10B981" stroke-width="2"/>
+                    <rect x="211" y="38" width="178" height="28" rx="5" fill="#059669"/>
+                    <text x="300" y="56" text-anchor="middle" fill="#FFFFFF" font-size="10.5" font-weight="800">⭐ 第二階段：本月驗證 (Day 8–30)</text>
+                    <text x="221" y="84" fill="#FFFFFF" font-size="9.5" font-weight="700">5. 換圈子當群紅 (Ch3)</text>
+                    <text x="221" y="98" fill="#94A3B8" font-size="8.5">入2個新社群，頭2週無償幫人3次</text>
+                    <text x="221" y="118" fill="#FFFFFF" font-size="9.5" font-weight="700">6. 老媽測試訪談 (Ch5)</text>
+                    <text x="221" y="132" fill="#94A3B8" font-size="8.5">訪談10–15人挖出 ≥3 個共性痛點</text>
+                    <text x="221" y="152" fill="#6EE7B7" font-size="9.5" font-weight="800">7. 海報MVP＋1對1諮詢 (Ch5)</text>
+                    <text x="221" y="166" fill="#A7F3D0" font-size="8.5">接3–5單付費諮詢或海報收5–10單</text>
+                    <text x="221" y="186" fill="#FFFFFF" font-size="9.5" font-weight="700">8. 私域導流與貼標 (Ch4/7)</text>
+                    <text x="221" y="200" fill="#94A3B8" font-size="8.5">完成30人分層貼標＋連4週規律發文</text>
+
+                    <!-- Phase 3: Quarter 1 -->
+                    <rect x="404" y="38" width="178" height="186" rx="5" fill="#0F2942" stroke="#D97706" stroke-width="2"/>
+                    <rect x="404" y="38" width="178" height="28" rx="5" fill="#D97706"/>
+                    <text x="493" y="56" text-anchor="middle" fill="#FFFFFF" font-size="10.5" font-weight="800">🚀 第三階段：本季放大 (Day 31–90)</text>
+                    <text x="414" y="84" fill="#FFFFFF" font-size="9.5" font-weight="700">9. 雙層產品階梯 (Ch6)</text>
+                    <text x="414" y="98" fill="#94A3B8" font-size="8.5">1引流品＋1標準化訓練營(定價只漲不降)</text>
+                    <text x="414" y="118" fill="#FFFFFF" font-size="9.5" font-weight="700">10. 7-11-4 與預熱發售 (Ch7)</text>
+                    <text x="414" y="132" fill="#94A3B8" font-size="8.5">累積500深度受眾，提前2週3波預熱</text>
+                    <text x="414" y="152" fill="#FFFFFF" font-size="9.5" font-weight="700">11. 非雇傭外包＋買時間 (Ch8/9)</text>
+                    <text x="414" y="166" fill="#94A3B8" font-size="8.5">按件外包交付庶務，付費請教專家教練</text>
+                    <text x="414" y="186" fill="#FBBF24" font-size="9.5" font-weight="800">12. Day 90 停損與升階檢核</text>
+                    <text x="414" y="200" fill="#FDE68A" font-size="8.5">達標則放大規模；未達3單則重調定位</text>
+                  </svg>
+                </div>
+                <div class="exhibit-source">資料來源：彙整自《把熱愛變成事業_逐章分析與行動方案》全書 46 項落實行動方案。</div>
+              </div>
+
+              <!-- Right: 5-Dimension Personal Calibration -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="mck-bucket-card navy-top">
+                  <div class="bucket-title">🎯 邁向 100% 把握度：個人化校準五維度自檢問題</div>
+                  <ul class="bucket-list">
+                    <li><strong>問題 ① 在職狀態</strong>：目前是在職、離職中、還是已全職創業？（決定從 Ch1 財務儲備開始，還是直攻 Ch5 驗證）</li>
+                    <li><strong>問題 ② 可交付專業技能</strong>：是否已有 Lv 3–4 可交付技能與領域？（決定能否跳過探索、直接推一對一付費諮詢）</li>
+                    <li><strong>問題 ③ 現金緩衝月數</strong>：目前儲備金可撐幾個月？（決定試錯期長度與停損底線）</li>
+                    <li><strong>問題 ④ 目標市場</strong>：台灣、中國大陸或海外華語？（決定平台載體 LINE/IG/Threads 與定價幣別）</li>
+                    <li><strong>問題 ⑤ 既有私域名單</strong>：是否已有自媒體帳號與私域好友？（決定從 Ch4 公域獲客還是 Ch7 私域開賣切入）</li>
+                  </ul>
+                </div>
+
+                <div class="mck-bucket-card emerald-top">
+                  <div class="bucket-title">⚡ 讀完本書「今天就能立刻做」的一件事</div>
+                  <ul class="bucket-list">
+                    <li><strong>不要合上簡報繼續空想！</strong>現在就打開記事本，寫下你<strong>比新手領先 3–4 級的一項具體能力</strong>，擬定一張「一對一諮詢服務說明（含解決痛點與種子優惠價）」，在本週內發給 5 位私域聯絡人或發進社群測試！</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 16: Top 10 High-ROI Actions Checklist -->
+            <div class="mck-table-wrap">
+              <table class="mck-table">
+                <thead>
+                  <tr>
+                    <th>優先序</th>
+                    <th>行動代號與具體執行項目（Top 10 必做清單）</th>
+                    <th>對應章節</th>
+                    <th>驗收期限</th>
+                    <th>量化成功指標 (Success KPI)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="badge-mck badge-gold">P0 本週</span></td>
+                    <td><strong>財務與時間雙審計</strong>：核算近3月支出÷稅後收入比；統計近7天「重要不緊急」時數占比。</td>
+                    <td>Ch 1, Ch 9</td>
+                    <td>Day 3 內</td>
+                    <td>支出比＞70%者砍1項固定支出降5%；行事曆每週鎖死 3 小時做產品/內容。</td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge-mck badge-gold">P0 本週</span></td>
+                    <td><strong>6P 自評 ＋ IKIGAI ＋ 100字收費自我介紹</strong>：完成現狀盤點與第一篇個人真實故事公開發文。</td>
+                    <td>Ch 1, 2, 4, 7</td>
+                    <td>Day 7 內</td>
+                    <td>完成 6P 自評表、100 字內服務收費文案定稿，並公開發布第 1 篇故事觀點文。</td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge-mck badge-blue">P1 本月</span></td>
+                    <td><strong>換圈子當群紅 ＋ 私域 30 人分層貼標</strong>：加入 2 個目標社群，簡介掛上私域領取福利誘因。</td>
+                    <td>Ch 3, Ch 4</td>
+                    <td>Day 21 內</td>
+                    <td>新群內無償實質幫助 ≥3 次獲感謝；完成既有 ≥30 位私域好友標籤分類。</td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge-mck badge-blue">P1 本月</span></td>
+                    <td><strong>老媽測試訪談 ＋ 海報預售 MVP ／ 1對1諮詢</strong>：真金白銀測試市場需求，絕不閉門錄課。</td>
+                    <td>Ch 5</td>
+                    <td>Day 30 內</td>
+                    <td>訪談 10–15 人找出 ≥3 個共性痛點；完成 <strong>≥3 單付費諮詢</strong>或海報預售 ≥5–10 單。</td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge-mck badge-emerald">P2 本季</span></td>
+                    <td><strong>7-11-4 預熱發售 ＋ 非雇傭兼職外包 ＋ 90天停損檢核</strong>：建立「1引流＋1核心品」與按件計費協力網。</td>
+                    <td>Ch 6, 7, 8, 15</td>
+                    <td>Day 90 內</td>
+                    <td>開賣前 2 週 3 波預熱（48hr 售出過半）；外包 1 項交付庶務；檢核是否達標留牌桌。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mck-takeaway-bar">
+              <span>🎉 <strong>全書總結金句：</strong>「如果你做的是你熱愛的事，你永遠都不會覺得自己是在工作。先開槍、再瞄準，留在牌桌上等待複利的奇蹟！」</span>
+              <span>恭喜完成 BOOK #001 全書 16 頁麥肯錫簡報研習！</span>
+            </div>
+
+            <div class="mck-speaker-notes">
+              <div class="notes-toggle-header">
+                <span>🎙️ 麥肯錫顧問三段式講稿備忘錄（點擊展開／快捷鍵 N）</span>
+                <span>Slide 16 Notes ▾</span>
+              </div>
+              <div class="notes-body">
+                <strong>① 本頁結論：</strong>將全書方法論落實為「本週破局、本月驗證、本季放大」的 90 天執行藍圖，並在 7 天內完成第一個公開動作。<br>
+                <strong>② 補充說明：</strong>點子不值錢，執行才是王道。多數人看完了書感動三天，第四天繼續回職場爬梯子抱怨。請直接對照本頁下方 Top 10 表格，在 72 小時內做完支出與時間審計，7 天內發出第一篇故事文與 100 字收費服務介紹。<br>
+                <strong>③ 結語與下一步：</strong>您可隨時點擊頂部「返回策略知識庫門戶」使用全站關鍵字檢索，或下載 `.pptx` 檔案作為團隊與個人複盤教材。
+              </div>
+            </div>
+          </div>
+
+          <div class="mck-slide-footer">
+            <span>創業策略思考知識庫 ｜ BOOK #001《把熱愛變成事業》</span>
+            <span>McKinsey Executive Briefing Format • Page 16 of 16</span>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Floating Bottom Slide Navigation Dock -->
+  <div class="deck-floating-nav">
+    <button class="dock-btn" id="btnPrevSlide" title="上一頁 (←)">←</button>
+    <div class="dock-counter" id="slideCounter">Slide 1 / 16</div>
+    <button class="dock-btn" id="btnNextSlide" title="下一頁 (→)">→</button>
+  </div>
+
+  <script src="search-index.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
